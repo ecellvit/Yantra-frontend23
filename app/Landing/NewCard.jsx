@@ -33,7 +33,6 @@ export default function NewCard({
       handleRegisterwithLogin(id);
     }
 
-
     fetch(`${process.env.NEXT_PUBLIC_SERVER}/api/user/register`, {
       method: "PATCH",
       body: JSON.stringify({
@@ -113,23 +112,23 @@ export default function NewCard({
   return (
     <>
       <div className="timeline_wrapper">
-        <h1 className="date">{event.date}</h1>
+        <h1 className="date">{event?.date}</h1>
         <div
           className={`card_cont`}
           style={{
-            backgroundImage: `url(${event.imgUrl})`,
+            backgroundImage: `url(${event?.imgUrl})`,
           }}
         >
-          <h1 className="card_h1">{event.title} </h1>
-          <p className="card_para">{event.description}</p>
+          <h1 className="card_h1">{event?.title} </h1>
+          <p className="card_para">{event?.description}</p>
           <div className="card_time">
             <div className="card_l">
               <img src="clock.svg" alt="" className="svg_card" />
-              <p className="timepara">{event.time} hours</p>
+              <p className="timepara">{event?.time} hours</p>
             </div>
             <div className="card_r">
               <img src="location.svg" alt="" className="svg_card" />
-              <p className="timepara">{event.location}</p>
+              <p className="timepara">{event?.location}</p>
             </div>
           </div>
           <button
@@ -139,7 +138,6 @@ export default function NewCard({
               // if (event === eventsArray[4]) {
               //   return;
               // }
-              
 
               if (id === 0 && userArray !== undefined && userArray[2] === 1) {
                 return;
@@ -156,10 +154,10 @@ export default function NewCard({
             {!session ? (
               // (event === eventsArray[4]) ? <>Maximum Capacity Reached</> : <>Register event</>
               <>Register event</>
-            ) : (event != eventsArray[4]) ? (id === 0 ? (
-              <>
-                {
-                  isRegistered === 0 ? (
+            ) : event != eventsArray[4] ? (
+              id === 0 ? (
+                <>
+                  {isRegistered === 0 ? (
                     userArray[2] != 1 ? (
                       <>
                         Register<strong>→</strong>{" "}
@@ -172,37 +170,43 @@ export default function NewCard({
                       Go to schedule<strong>→</strong>{" "}
                     </>
                   )}
-              </>
-            ) : id === 2 ? (
-              <>
-                {isRegistered === 0 ? (
-                  userArray[0] != 1 ? (
+                </>
+              ) : id === 2 ? (
+                <>
+                  {isRegistered === 0 ? (
+                    userArray[0] != 1 ? (
+                      <>
+                        Register<strong>→</strong>{" "}
+                      </>
+                    ) : (
+                      <>Clashing with Impetus</>
+                    )
+                  ) : (
+                    <>
+                      Go to schedule<strong>→</strong>{" "}
+                    </>
+                  )}
+                </>
+              ) : (
+                <>
+                  {isRegistered === 0 ? (
                     <>
                       Register<strong>→</strong>{" "}
                     </>
                   ) : (
-                    <>Clashing with Impetus</>
-                  )
-                ) : (
-                  <>
-                    Go to schedule<strong>→</strong>{" "}
-                  </>
-                )}
-              </>
+                    <>
+                      Go to schedule<strong>→</strong>{" "}
+                    </>
+                  )}
+                </>
+                // )) : (<>Maximum Capacity Reached</>)}
+              )
             ) : (
               <>
-                {isRegistered === 0 ? (
-                  <>
-                    Register<strong>→</strong>{" "}
-                  </>
-                ) : (
-                  <>
-                    Go to schedule<strong>→</strong>{" "}
-                  </>
-                )}
+                {" "}
+                Go to schedule<strong>→</strong>{" "}
               </>
-            // )) : (<>Maximum Capacity Reached</>)}
-            )) : (<> Go to schedule<strong>→</strong>{" "}</>)}
+            )}
             {/* <strong>→</strong>{" "} */}
           </button>
           {/* <button className="btn_card_last w-button">

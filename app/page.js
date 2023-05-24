@@ -35,7 +35,7 @@ async function getUserData(session) {
       cache: "no-store",
     });
     if (!res.ok) {
-      return "error"
+      return "error";
     }
     return res.json();
   }
