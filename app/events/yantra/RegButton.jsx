@@ -84,7 +84,7 @@ export default function RegButton({ userArray, check }) {
         if (userArray) {
           //console.log(userArray);
           if (userArray[1]) {
-            router.push("/manage/ehack");
+            router.push("/manage/yantra");
           } else {
             //console.log("here");
             return handleRegister(1);

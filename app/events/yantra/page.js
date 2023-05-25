@@ -29,12 +29,12 @@ export default async function Home() {
     userArray = userData?.user.registeredEvents;
   }
 
-  const check = session && userArray[1];
+  const check = session && userArray[0];
   return (
     <div className="event-sec">
       <div className="event_wrapper">
         <h1 className="event_h1">
-          E-Hack
+          Yantra
           <br />
         </h1>
         <p className="event_date ">
