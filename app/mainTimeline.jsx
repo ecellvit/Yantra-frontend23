@@ -115,7 +115,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                   <NewCard
                     isRegistered={0}
                     event={eventsArray[0]}
-                    id={1}
+                    id={0}
                     eventsArray={eventsArray}
                     userArray={userArray}
                   ></NewCard>
