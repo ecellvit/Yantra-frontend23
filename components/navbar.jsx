@@ -173,76 +173,52 @@ export default function Navbar({ session }) {
                       onClick={() => {
                         setRespHidden(true);
                       }}
-                      href="/events/ehack"
+                      href="/events/yantra"
                       style={{
                         backgroundColor:
-                          pathname == "/events/ehack" && "#E5E7EB",
+                          pathname == "/events/yantra" && "#E5E7EB",
                       }}
                     >
-                      E-Hack
+                      Yantra
                     </Link>
                     <Link
                       className="dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0"
                       onClick={() => {
                         setRespHidden(true);
                       }}
-                      href="/events/innoventure"
+                      href="/events/work1"
                       style={{
                         backgroundColor:
-                          pathname == "/events/innoventure" && "#E5E7EB",
+                          pathname == "/events/work1" && "#E5E7EB",
                       }}
                     >
-                      Innoventure
+                      Workshop 1
                     </Link>
                     <Link
                       className="dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0"
                       onClick={() => {
                         setRespHidden(true);
                       }}
-                      href="/events/impetus"
+                      href="/events/work2"
                       style={{
                         backgroundColor:
-                          pathname == "/events/impetus" && "#E5E7EB",
+                          pathname == "/events/work2" && "#E5E7EB",
                       }}
                     >
-                      Impetus
+                      Workshop 2
                     </Link>
                     <Link
                       className="dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0"
                       onClick={() => {
                         setRespHidden(true);
                       }}
-                      href="/events/etalk"
+                      href="/events/work3"
                       style={{
                         backgroundColor:
-                          pathname == "/events/etalk" && "#E5E7EB",
+                          pathname == "/events/work3" && "#E5E7EB",
                       }}
                     >
-                      Etalk
-                    </Link>
-                    {/* <Link
-                      className="dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0"
-                      onClick={()=>{setRespHidden(true)}}
-                      href="/events/ehack"
-                      style={{
-                        backgroundColor:
-                          pathname == "/events/ehack" && "#E5E7EB",
-                      }}
-                    >
-                      Ehack
-                    </Link> */}
-                    <Link
-                      className="dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0"
-                      onClick={() => {
-                        setRespHidden(true);
-                      }}
-                      href="/events/trading"
-                      style={{
-                        backgroundColor:
-                          pathname == "/events/trading" && "#E5E7EB",
-                      }}
-                    >
-                      Trading Workshop
+                      Workshop 3
                     </Link>
                   </div>
                 </div>
@@ -281,21 +257,6 @@ export default function Navbar({ session }) {
                   {dropdown2 && (
                     <div className="z-10 absolute right-0 mt-2 w-full origin-top-right rounded-md shadow-lg md:w-32">
                       <div className="dark-mode:bg-gray-800 rounded-md bg-white px-2 py-2 shadow">
-                        {regArray[1] ? (
-                          <Link
-                            className="bg-gray-200 dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0"
-                            onClick={() => {
-                              setRespHidden(true);
-                            }}
-                            href="/manage/ehack"
-                            style={{
-                              backgroundColor:
-                                pathname == "/manage/ehack" && "#E5E7EB",
-                            }}
-                          >
-                            E-Hack
-                          </Link>
-                        ) : null}
                         {regArray[2] ? (
                           <Link
                             className="dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0"
@@ -309,21 +270,6 @@ export default function Navbar({ session }) {
                             }}
                           >
                             Innoventure
-                          </Link>
-                        ) : null}
-                        {regArray[0] ? (
-                          <Link
-                            className="dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0"
-                            onClick={() => {
-                              setRespHidden(true);
-                            }}
-                            href="/manage/impetus"
-                            style={{
-                              backgroundColor:
-                                pathname == "/manage/impetus" && "#E5E7EB",
-                            }}
-                          >
-                            Impetus
                           </Link>
                         ) : null}
                       </div>
