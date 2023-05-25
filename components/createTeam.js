@@ -1,6 +1,6 @@
 "use client";
 import { usePathname, useRouter } from "next/navigation";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import refreshData from "@/app/utils/refresh";
@@ -8,6 +8,7 @@ import "../styles/landing.css";
 export default function CreateTeam({ session, eventName }) {
   eventName = eventName.toLowerCase();
   const teamName = useRef("");
+  const [emailIds, setEmailIds] = useState([]);
   const router = useRouter();
   const path = usePathname();
 
@@ -17,11 +18,20 @@ export default function CreateTeam({ session, eventName }) {
       toast.error("Please Don't Leave Name as Blank!");
       return;
     }
+    console.log(emailIds[1]?.trim());
+    if (emailIds[0]?.trim() === "") {
+      toast.error("Please enter atleast one teammate mail id");
+      return;
+    }
 
-    fetch(`${process.env.NEXT_PUBLIC_SERVER}/api/${eventName}/team`, {
+    console.log(session?.accessTokenBackend);
+    fetch(`${process.env.NEXT_PUBLIC_SERVER}/api/yantra/team`, {
       method: "POST",
       body: JSON.stringify({
         teamName: teamName.current.value.trim(),
+        teamMate1Email: emailIds[0].trim(),
+        teamMate2Email: emailIds[1]?.trim() ? emailIds[1]?.trim() : null,
+        teamMate3Email: emailIds[2]?.trim() ? emailIds[2]?.trim() : null,
       }),
       headers: {
         "Content-Type": "application/json",
@@ -50,6 +60,56 @@ export default function CreateTeam({ session, eventName }) {
       });
   };
 
+  const [selectedNumber, setSelectedNumber] = useState(null);
+
+  const handleNumberChange = (event) => {
+    const number = parseInt(event.target.value);
+    setSelectedNumber(number);
+  };
+  useEffect(() => {
+    console.log(selectedNumber);
+    if (!selectedNumber) {
+      setEmailIds([]);
+    } else if (selectedNumber === 2) {
+      emailIds.splice(1, 2);
+      setEmailIds(emailIds);
+    } else if (selectedNumber === 3) {
+      emailIds.splice(2, 1);
+      setEmailIds(emailIds);
+    }
+  }, [selectedNumber]);
+
+  const handleEmailIdChange = (index, event) => {
+    const newEmailIds = [...emailIds];
+    newEmailIds[index] = event.target.value.trim();
+    setEmailIds(newEmailIds);
+  };
+
+  const renderInputBoxes = () => {
+    if (selectedNumber === null) {
+      return null;
+    }
+
+    const inputBoxes = [];
+    for (let i = 0; i < selectedNumber - 1; i++) {
+      inputBoxes.push(
+        <div key={i} className="w-form">
+          <input
+            type="email"
+            className="team w-input rounded-lg"
+            name={`membername${i}`}
+            data-name="Name"
+            placeholder={`Enter TeamMate ${i + 2} email`}
+            onChange={(e) => handleEmailIdChange(i, e)}
+            id={`name${i}`}
+          />
+        </div>
+      );
+    }
+
+    return inputBoxes;
+  };
+
   // infinity spin center
   // name on dash
 
@@ -66,7 +126,9 @@ export default function CreateTeam({ session, eventName }) {
         >
           Find Team
         </button>
-        <h1 className="join_h1 bold"><br></br>Or</h1>
+        <h1 className="join_h1 bold">
+          <br></br>Or
+        </h1>
         <h1 className="join_h1">Create Your Team</h1>
         <div className="w-form">
           <input
@@ -78,6 +140,19 @@ export default function CreateTeam({ session, eventName }) {
             placeholder="Enter Team Name"
             id="name"
           />
+          <div>
+            <select
+              className="w-form  w-input rounded-lg"
+              value={selectedNumber}
+              onChange={handleNumberChange}
+            >
+              <option value="">Select TeamSize</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            {renderInputBoxes()}
+          </div>
         </div>
         <button
           type="button"
