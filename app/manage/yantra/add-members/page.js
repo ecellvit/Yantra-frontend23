@@ -4,8 +4,8 @@ import NotyNav from "@/components/notyNav";
 import { authOptions } from "@/pages/api/auth/[...nextauth]";
 import { getServerSession } from "next-auth";
 
-// async function ehackRegistered(session) {
-//   const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER}/api/ehack/user`, {
+// async function yantraRegistered(session) {
+//   const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER}/api/yantra/user`, {
 //     method: "GET",
 //     headers: {
 //       "Content-Type": "application/json",
@@ -23,7 +23,7 @@ import { getServerSession } from "next-auth";
 
 async function leaderSentInvites(session) {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_SERVER}/api/ehack/addMember`,
+    `${process.env.NEXT_PUBLIC_SERVER}/api/yantra/addMember`,
     {
       method: "GET",
       headers: {
@@ -44,7 +44,7 @@ async function leaderSentInvites(session) {
 // async function checkRegistered(session, data) {
 //   data?.map(async (user) => {
 //     const res = await fetch(
-//       `${process.env.NEXT_PUBLIC_SERVER}/api/ehack/user`,
+//       `${process.env.NEXT_PUBLIC_SERVER}/api/yantra/user`,
 //       {
 //         method: "GET",
 //         headers: {
@@ -59,12 +59,12 @@ async function leaderSentInvites(session) {
 // }
 
 export default async function AddMembers() {
-  const eventName = "eHack";
+  const eventName = "yantra";
   const session = await getServerSession(authOptions);
-  // const data = await ehackRegistered(session);
+  // const data = await yantraRegistered(session);
   const sentData = await leaderSentInvites(session);
   //console.log(sentData.requests);
-  // const users = data?.eHackMembers;
+  // const users = data?.yantraMembers;
   //console.log(data);
   return (
     <div>

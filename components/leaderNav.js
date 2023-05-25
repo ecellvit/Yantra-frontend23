@@ -21,7 +21,7 @@ function LeaderNav({ eventName }) {
             </button>
             <h1 className="subnav_h1">
               {" "}
-              {eventName === "ehack" ? "E-Hack" : eventName.toUpperCase()}
+              {eventName === "yantra" ? "Yantra" : eventName.toUpperCase()}
             </h1>
           </div>
           <div className="right_subnav">

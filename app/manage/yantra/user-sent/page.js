@@ -1,12 +1,12 @@
+import NotyNav from "@/components/notyNav";
 import { authOptions } from "@/pages/api/auth/[...nextauth]";
 import { getServerSession } from "next-auth";
-import LeaderSentReq from "@/components/LeaderSentReq";
-import NotyNav from "@/components/notyNav";
+import UserSentComponent from "@/components/UserSentComponent";
+import "../../../../styles/landing.css";
 import Taskbar from "@/app/componentsSSR/taskbar";
-
-async function leaderSentInvites(session) {
+async function requestSentData(session) {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_SERVER}/api/ehack/addMember`,
+    `${process.env.NEXT_PUBLIC_SERVER}/api/user/yantra/requests`,
     {
       method: "GET",
       headers: {
@@ -24,15 +24,17 @@ async function leaderSentInvites(session) {
   return res.json();
 }
 
-export default async function LeaderSent() {
-  const eventName = "eHack";
+export default async function UserSent() {
+  const eventName = "yantra";
   const session = await getServerSession(authOptions);
-  const data = await leaderSentInvites(session);
+  const data = await requestSentData(session);
+
   const requests = data.requests;
   return (
     <>
       <Taskbar eventName={eventName} />
-      <LeaderSentReq
+
+      <UserSentComponent
         eventName={eventName}
         requests={requests}
         session={session}

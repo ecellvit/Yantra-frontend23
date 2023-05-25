@@ -7,7 +7,7 @@ import Taskbar from "@/app/componentsSSR/taskbar";
 
 async function addMemberData(session) {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_SERVER}/api/user/ehack/addMember`,
+    `${process.env.NEXT_PUBLIC_SERVER}/api/user/yantra/addMember`,
     {
       method: "GET",
       headers: {
@@ -26,7 +26,7 @@ async function addMemberData(session) {
 }
 
 export default async function UserReceived() {
-  const eventName = "ehack";
+  const eventName = "yantra";
   const session = await getServerSession(authOptions);
   const data = await addMemberData(session);
   const requests = data.requests;

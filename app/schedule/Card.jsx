@@ -110,10 +110,12 @@ export default function Card({
 
           <button
             className={`btn_card_last w-button ${
-              (id == 4 || id === 3) && "hidden"
+              event.title !== "Yantra" && "hidden"
             }`}
             onClick={(e) =>
-              !session ? handleRegisterwithLogin(e, id) : handleNavigation(tit)
+              !session
+                ? handleRegisterwithLogin(e, id)
+                : handleNavigation(event.title)
             }
           >
             Manage Event<strong>→</strong>{" "}
