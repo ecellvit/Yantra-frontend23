@@ -139,12 +139,12 @@ export default function NewCard({
               //   return;
               // }
 
-              if (id === 0 && userArray !== undefined && userArray[2] === 1) {
-                return;
-              }
-              if (id === 2 && userArray !== undefined && userArray[0] === 1) {
-                return;
-              }
+              // if (id === 0 && userArray !== undefined && userArray[2] === 1) {
+              //   return;
+              // }
+              // if (id === 2 && userArray !== undefined && userArray[0] === 1) {
+              //   return;
+              // }
               if (isRegistered === 0) {
                 return handleRegister(id);
               }
@@ -163,7 +163,9 @@ export default function NewCard({
                         Register<strong>→</strong>{" "}
                       </>
                     ) : (
-                      <>Clashing with Innoventure</>
+                      <>
+                        Register<strong>→</strong>{" "}
+                      </>
                     )
                   ) : (
                     <>
@@ -179,7 +181,9 @@ export default function NewCard({
                         Register<strong>→</strong>{" "}
                       </>
                     ) : (
-                      <>Clashing with Impetus</>
+                      <>
+                        Register<strong>→</strong>{" "}
+                      </>
                     )
                   ) : (
                     <>
