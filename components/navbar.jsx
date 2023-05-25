@@ -266,10 +266,10 @@ export default function Navbar({ session }) {
                             href="/manage/innoventure"
                             style={{
                               backgroundColor:
-                                pathname == "/manage/innoventure" && "#E5E7EB",
+                                pathname == "/manage/yantra" && "#E5E7EB",
                             }}
                           >
-                            Innoventure
+                            Yantra
                           </Link>
                         ) : null}
                       </div>
