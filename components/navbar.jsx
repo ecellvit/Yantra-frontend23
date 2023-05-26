@@ -68,20 +68,20 @@ export default function Navbar({ session }) {
 
   return (
     <>
-      <div className="dark-mode:text-gray-200 dark-mode:bg-gray-800 w-full bg-white text-gray-700">
+      <div className="dark-mode:text-gray-200 dark-mode:bg-gray-800 w-full bg-[#1C1D20] text-white">
         <div
           x-data="{ open: false }"
           className="mx-auto flex max-w-screen-xl flex-col px-4 md:flex-row md:items-center md:justify-between md:px-6 lg:px-8"
         >
           <div className="flex flex-row items-center justify-between p-4">
             <Link
-              className="dark-mode:text-white focus:shadow-outline rounded-lg text-lg font-semibold tracking-widest text-gray-900 focus:outline-none"
+              className="dark-mode:text-white focus:shadow-outline rounded-lg text-lg font-semibold tracking-widest text-white focus:outline-none"
               onClick={() => {
                 setRespHidden(true);
               }}
               href={"/"}
             >
-              E-SUMMIT’23
+              YANTRA’23
             </Link>
             <button
               onClick={() => {
