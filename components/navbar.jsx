@@ -263,7 +263,7 @@ export default function Navbar({ session }) {
                             onClick={() => {
                               setRespHidden(true);
                             }}
-                            href="/manage/innoventure"
+                            href="/manage/yantra"
                             style={{
                               backgroundColor:
                                 pathname == "/manage/yantra" && "#E5E7EB",
