@@ -16,10 +16,10 @@ export default function Section6() {
     <div className="sound_sec">
       <div className="sound_section">
         <div className="img_sound">
-          <img src="flag.png" width="162" alt="" />
+          <img src="svg.png" width="162" alt="" />
         </div>
         <div className="sound_r">
-          <h1 className="about_h1 sound">Sounds Awesome?</h1>
+          <h1 className="about_h1 sound text-white">Sounds Awesome?</h1>
           <button
             onClick={() => {
               session.data ? router.push("/schedule") : loginHandler();
