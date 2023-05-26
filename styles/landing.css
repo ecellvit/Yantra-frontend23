@@ -81,14 +81,6 @@
   .primary_btn {
     @apply block w-[15vw] bg-white text-black text-base leading-[20px] font-bold text-center mt-[20px] px-[15px] py-[9px] rounded-[20px] border-2 border-solid border-black;
     font-family: Inter, sans-serif;
-    transition: 0.3s;;
-  }
-  .primary_btn:hover{
-    color: white;
-    background: black;
-    border: 2px white solid;
-    transition: 0.3s;
-    transform: scale(1.1);
   }
   .about_h1 {
     @apply text-black text-5xl leading-[44px] font-medium text-left my-[3vh] mt-[10vh];
@@ -124,10 +116,10 @@
     @apply block w-[20px] h-[20px] bg-[#fcfcfc] text-center m-auto rounded-[55px];
   }
   .timeline-element {
-    /* @apply flex flex-row items-stretch; */
+    @apply flex flex-row items-stretch;
   }
   .timeline_wrapper {
-    @apply flex justify-center items-center pb-[5vh] border-white border-spacing-2 ;
+    @apply pb-[5vh];
   }
   .linetimeline {
     @apply w-[1vw] mt-[-1px] h-full bg-[#303030];
@@ -145,11 +137,11 @@
     @apply w-full h-px bg-black mt-0;
   }
   .date {
-    @apply text-2xl font-bold  mb-[10px] text-center;
+    @apply text-2xl font-bold ml-[5vw]  mb-[10px];
     font-family: Inter, sans-serif;
   }
   .whiteline {
-    @apply w-full h-3 bg-white mt-0 mb-[10vh];
+    @apply w-full h-px bg-white mt-0 mb-[10vh];
   }
   .spon_heading {
     @apply text-white text-5xl font-medium text-left mt-0 mb-[3vh] pt-[10vh];
@@ -222,8 +214,7 @@
     @apply min-w-[10vw] mb-[10px];
   }
   .card_cont {
-    /* @apply static max-h-full max-w-[70%] min-w-[50vw] min-h-[40vh]  bg-[50%_50%] bg-cover bg-no-repeat text-white ml-[5vw] px-[40px] py-[20px] rounded-[20px] left-[10%] right-[15%] top-[5%] bottom-auto; */
-    /* @apply ; */
+    @apply static max-h-full max-w-[70%] min-w-[50vw] min-h-[40vh]  bg-[50%_50%] bg-cover bg-no-repeat text-white ml-[5vw] px-[40px] py-[20px] rounded-[20px] left-[10%] right-[15%] top-[5%] bottom-auto;
   }
   .pos {
     @apply bg-[0%_0%];
@@ -236,7 +227,7 @@
     font-family: Inter, sans-serif;
   }
   .card_para {
-    @apply text-white text-base font-normal text-center mb-[10px];
+    @apply text-white text-base leading-[25px] font-normal text-left ml-0 mb-[10px];
     font-family: Inter, sans-serif;
   }
   .timepara {
@@ -244,7 +235,7 @@
     font-family: Inter, sans-serif;
   }
   .card_time {
-    /* @apply flex justify-start items-center gap-x-[5vw] gap-y-[5vw]; */
+    @apply flex justify-start items-center gap-x-[5vw] gap-y-[5vw];
   }
   .card_r {
     @apply block;
@@ -306,7 +297,7 @@
     font-family: Poppins, sans-serif;
   }
   .sound_sec {
-    @apply mt-[-20px] bg-[url("https://ik.imagekit.io/11b646uhq/yantra/IMG_wn4384E3F.png?updatedAt=1685046111392")];
+    @apply mt-[-20px] bg-[#f3f3f3];
   }
   .faq_sec {
     @apply flex min-h-[50vh] flex-row items-center pt-[5vh];
@@ -425,7 +416,7 @@
       @apply justify-center items-stretch;
     }
     .features {
-      @apply max-w-[30vw] flex-col justify-start flex-nowrap items-baseline gap-x-[2vw] gap-y-[2vw] border-r-2 pr-px border-white;
+      @apply max-w-[30vw] flex-col justify-start flex-nowrap items-baseline gap-x-[2vw] gap-y-[2vw];
     }
     .features.last {
       @apply flex-col justify-center items-baseline;
@@ -560,14 +551,9 @@
     }
     .foot_img {
       @apply min-w-[10vw];
-      transition: 0.5s;
-    }
-    .foot_img:hover{
-      transform: scale(1.1);
-      transition: 0.5s;
     }
     .card_cont {
-      /* @apply w-full; */
+      @apply max-w-[80%];
     }
     .card_h1 {
       @apply text-[2rem];
@@ -656,7 +642,7 @@
       @apply max-w-[80%] text-base;
     }
     .feat_para {
-      @apply min-h-[auto] text-center mb-[60px] text-sm;
+      @apply min-h-[auto] text-center mb-[60px];
     }
     .about_img_wrapper {
       @apply max-w-[80vw];
@@ -710,7 +696,7 @@
       @apply mt-[20px];
     }
     .card_cont {
-      /* @apply max-w-[95%] ml-[3vw] pl-[20px] pr-[10px] py-[10px] left-[0%] right-[5%] top-[0%]; */
+      @apply max-w-[95%] ml-[3vw] pl-[20px] pr-[10px] py-[10px] left-[0%] right-[5%] top-[0%];
     }
     .pos {
       @apply bg-[50%_50%];
@@ -831,7 +817,7 @@
   }
 }
 .w-input {
-  @apply block w-full h-[38px] text-sm  outline-0 leading-[1.42857143] text-[white] align-middle bg-[#1C1D20] border-none mb-2.5 px-3 py-2  border-[#cccccc];
+  @apply block w-full h-[38px] text-sm  outline-0 leading-[1.42857143] text-[#333333] align-middle bg-white border mb-2.5 px-3 py-2 border-solid border-[#cccccc];
 }
 
 /* Details Page*/
@@ -991,28 +977,28 @@
   font-family: Inter, sans-serif;
 }
 .subnav {
-  @apply flex justify-between items-center bg-[#1C1D20] bg-opacity-80 text-center mx-0 px-10 py-2.5;
+  @apply flex justify-between items-center bg-[#e7e7e7] text-center mx-0 px-10 py-2.5;
 }
 .right_subnav {
   @apply flex min-w-[20vw] items-center;
 }
 .recieved {
-  @apply text-white text-base leading-5 ml-2.5 px-[15px] py-[9px] rounded-[5px] bg-[#CE230F];
+  @apply text-white text-base leading-5 ml-2.5 px-[15px] py-[9px] rounded-[5px] bg-[#53B3B9];
 }
 .ehack_cont {
-  @apply flex w-[70vw] min-h-[60vh] flex-col items-center bg-[#1C1D20] bg-opacity-60 mx-auto my-[7vh] p-5;
+  @apply flex w-[70vw] min-h-[60vh] flex-col items-center bg-[#e7e7e7] mx-auto my-[7vh] p-5;
 }
 .team {
   @apply min-w-[50vw] mb-2.5 mx-auto pb-2 px-3;
 }
 .managebtn {
-  @apply min-w-[4vw] text-white text-center px-[15px] py-[9px] bg-[#CE230F] rounded-[5px];
+  @apply min-w-[4vw] text-white text-center px-[15px] py-[9px] bg-[#53B3B9] rounded-[5px];
 }
 .left_sub {
   @apply flex min-w-[70vw] flex-row justify-around items-center font-normal;
 }
 .subnav_h1 {
-  @apply text-white text-5xl leading-10 font-bold text-center mt-5 mb-2.5;
+  @apply text-black text-5xl leading-10 font-bold text-center mt-5 mb-2.5;
   font-family: Inter, sans-serif;
 }
 .join_h1 {
@@ -1022,10 +1008,10 @@
   @apply font-bold mt-5;
 }
 .handleteam {
-  @apply w-[20vw] text-white text-center !bg-[#CE230F] px-[15px] py-[9px] rounded-[5px];
+  @apply w-[20vw] text-white text-center !bg-[#53B3B9] px-[15px] py-[9px] rounded-[5px];
 }
 .send {
-  @apply text-base leading-5  text-white text-center bg-[#CE230F] ml-2.5 px-[15px] py-[9px] rounded-[5px];
+  @apply text-base leading-5  text-white text-center bg-[#53B3B9] ml-2.5 px-[15px] py-[9px] rounded-[5px];
 }
 .teams_sec {
   /* @apply static min-h-[40vh]; */
@@ -1035,13 +1021,13 @@
   @apply flex w-[90vw]  flex-row flex-wrap items-center gap-x-[2vw] gap-y-[2vw] mt-2.5 mx-auto px-10 py-5;
 }
 .singlecard {
-  @apply flex bg-[#1C1D20]  break-all min-h-[20vh] min-w-[25vw] flex-col justify-center flex-wrap items-center object-contain mx-auto p-5 rounded-[20px];
+  @apply flex break-all min-h-[20vh] min-w-[25vw] flex-col justify-center flex-wrap items-center bg-white object-contain mx-auto p-5 rounded-[20px];
 }
 .team_card_holder {
-  @apply flex ;
+  @apply flex;
 }
 .team_details {
-  @apply break-all text-white text-[0.9rem] leading-[25px] text-center object-cover mb-2.5;
+  @apply break-all text-black text-[0.9rem] leading-[25px] text-center object-cover mb-2.5;
   font-family: Inter, sans-serif;
 }
 .team_text {
@@ -1054,11 +1040,11 @@
   @apply static flex justify-center items-center gap-x-[10vw] gap-y-[10vw] px-0 top-auto bottom-[0%] inset-x-[0%];
 }
 .navigation_card_btn {
-  @apply min-w-[20vw] text-white text-base leading-5 bg-[#CE230F] text-center ml-0 mb-[10vh] px-[15px] py-[9px] rounded-[5px];
+  @apply min-w-[20vw] text-white text-base leading-5 bg-[#53B3B9] text-center ml-0 mb-[10vh] px-[15px] py-[9px] rounded-[5px];
   font-family: Inter, sans-serif;
 }
 .join_team {
-  @apply min-w-[10vw] text-white  bg-[#CE230F] text-base leading-5  text-center px-[15px] py-[9px] rounded-[5px];
+  @apply min-w-[10vw] text-white  bg-[#53B3B9] text-base leading-5  text-center px-[15px] py-[9px] rounded-[5px];
   font-family: Inter, sans-serif;
 }
 @media screen and (max-width: 991px) {
@@ -1092,7 +1078,7 @@
     @apply min-h-[50vh] pb-2.5;
   }
   .managebtn {
-    @apply min-w-[20vw] text-center bg-[#CE230F] mb-0;
+    @apply min-w-[20vw] text-center bg-[#53B3B9] mb-0;
   }
   .left_sub {
     @apply flex max-w-[50vw] min-w-[100vw] flex-row-reverse justify-around flex-nowrap items-center;
@@ -1123,9 +1109,6 @@
   }
   .join_team {
     @apply min-w-[20vw] text-center mb-0;
-  }
-  .heading_common {
-    display: none;
   }
 }
 @media screen and (max-width: 479px) {

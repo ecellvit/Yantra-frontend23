@@ -99,7 +99,7 @@ export default function RegButton({ userArray, check }) {
         }}
       >
         {userArray[0] == 1
-          ? "Clashing With Impetus"
+          ? `${check ? "Go to Dashboard" : "Register Now"}`
           : `${check ? "Go to Dashboard" : "Register Now"}`}
       </button>
     );

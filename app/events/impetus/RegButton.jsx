@@ -98,7 +98,7 @@ export default function RegButton({ userArray, check }) {
         }}
       >
         {userArray[2] == 1
-          ? "Clashing With Innoventure"
+          ? `${check ? "Go to Dashboard" : "Register Now"}`
           : `${check ? "Go to Dashboard" : "Register Now"}`}
       </button>
     );
