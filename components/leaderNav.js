@@ -9,7 +9,7 @@ function LeaderNav({ eventName }) {
     <>
       {" "}
       <div className="create_cont mb-10">
-        <div className="subnav !bg-neutral-300 uppercase">
+        <div className="subnav uppercase">
           <div className="left_sub ml-[-1.2rem] md:ml-[6rem]  lg:ml-[-3.4rem]">
             <button
               onClick={() => {
@@ -33,7 +33,7 @@ function LeaderNav({ eventName }) {
             </button>
             <button
               button
-              className="recieved w-button bg-[#53B3B9] mr-[1.5rem] "
+              className="recieved w-button  mr-[1.5rem] "
               onClick={(e) =>
                 router.push(`/manage/${eventName}/received-join-request`)
               }

@@ -70,6 +70,7 @@ export default async function JoinTeams() {
   // //console.log("userID",userData?.user)
   const data = await getAllteams(session, 1);
   //   const requests = data.requests;
+  
   return (
     <>
       <Taskbar eventName={eventName} />

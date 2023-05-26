@@ -7,7 +7,7 @@ import "../styles/landing.css";
 
 function JoinTeamsCard({ teamData, session, eventName }) {
   // const config = genConfig(AvatarConfig)
-
+console.log("team Data",teamData);
   function handleJoinReq(teamId) {
     eventName = eventName.toLowerCase();
     fetch(
@@ -41,23 +41,23 @@ function JoinTeamsCard({ teamData, session, eventName }) {
       });
   }
 
-  let teamLeader;
+  // let teamLeader;
 
-  teamData?.members.map((x) => {
-    if (eventName == "ehack") {
-      if (x.eHackTeamRole == 0) {
-        teamLeader = x;
-      }
-    } else if (eventName == "innoventure") {
-      if (x.innoventureTeamRole == 0) {
-        teamLeader = x;
-      }
-    } else if (eventName == "impetus") {
-      if (x.impetusTeamRole == 0) {
-        teamLeader = x;
-      }
-    }
-  });
+  // teamData?.members.map((x) => {
+  //   if (eventName == "ehack") {
+  //     if (x.eHackTeamRole == 0) {
+  //       teamLeader = x;
+  //     }
+  //   } else if (eventName == "innoventure") {
+  //     if (x.innoventureTeamRole == 0) {
+  //       teamLeader = x;
+  //     }
+  //   } else if (eventName == "impetus") {
+  //     if (x.impetusTeamRole == 0) {
+  //       teamLeader = x;
+  //     }
+  //   }
+  // });
 
   return (
     <>
@@ -69,11 +69,11 @@ function JoinTeamsCard({ teamData, session, eventName }) {
           </p>
           <p className="team_details font-semibold break-all">
             Team Leader : {" "}
-            {teamLeader?.firstName + " " + teamLeader?.lastName}
+            {teamData?.members[0].firstName + " " + teamData?.members[0].lastName}
           </p>
           <p className="team_details font-semibold break-all">
             Email : {" "}
-            {teamLeader?.email}
+            {teamData?.members[0].email}
           </p>
         </div>
         <button
