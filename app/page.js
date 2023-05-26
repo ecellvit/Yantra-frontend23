@@ -10,6 +10,7 @@ import Footer from "./Landing/Footer";
 import { getSession } from "@/lib/session";
 import Maintimeline from "./mainTimeline";
 import NotLoggedIn from "@/components/NotLoggedIn";
+import AccordionPage from "@/components/AccordianSection";
 
 async function getData() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER}/api/events`, {
@@ -53,9 +54,9 @@ export default async function Home() {
   }
 
   return (
-    <div className="bg-white">
+    <div className="bg-black">
       <Header></Header>
-      <Section1 />
+      {/* <Section1 /> */}
       <Section2 />
       {/* section 3 here is what you can expect */}
       {/* <Section3 /> */}
@@ -64,7 +65,9 @@ export default async function Home() {
         userArray={userArray}
         session={session}
       />
-      {/* <Section4 /> */}
+
+      <Section4 />
+      <AccordionPage />
       {/* <Faqsection></Faqsection> */}
       <Section6></Section6>
       <Footer />

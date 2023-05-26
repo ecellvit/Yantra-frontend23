@@ -111,108 +111,114 @@ export default function NewCard({
 
   return (
     <>
-      <div className="timeline_wrapper">
-        <h1 className="date">{event?.date}</h1>
-        <div
-          className={`card_cont`}
-          style={{
-            backgroundImage: `url(${event?.imgUrl})`,
-          }}
-        >
-          <h1 className="card_h1">{event?.title} </h1>
-          <p className="card_para">{event?.description}</p>
-          <div className="card_time">
-            <div className="card_l">
-              <img src="clock.svg" alt="" className="svg_card" />
-              <p className="timepara">{event?.time} hours</p>
-            </div>
-            <div className="card_r">
-              <img src="location.svg" alt="" className="svg_card" />
-              <p className="timepara">{event?.location}</p>
+      <div className="timeline_wrapper ml-3">
+        <div className="border-white rounded-3xl border-4 p-8">
+          <img
+            className={`card_cont`}
+            src={event?.imgUrl}
+            alt="event_image"
+          />
+          <h1 className="card_h1 text-center">{event?.title} </h1>
+          <div className="flex justify-center items-center">
+            <p className="card_para">{event?.description}</p>
+          </div>
+          <h1 className="date text-white">{event?.date}</h1>
+          <div className="card_time flex justify-center items-center">
+            <div>
+              <div className="card_l">
+                <img src="clock.svg" alt="" className="svg_card" />
+                <p className="timepara text-white">{event?.time} hours</p>
+              </div>
+              <div className="card_r">
+                <img src="location.svg" alt="" className="svg_card" />
+                <p className="timepara text-white">{event?.location}</p>
+              </div>
             </div>
           </div>
-          <button
-            className="card_btn w-button"
-            onClick={() => {
-              // console.log(isRegistered);
-              // if (event === eventsArray[4]) {
-              //   return;
-              // }
+          <div className="flex justify-center items-center">
+            <button
+              className="card_btn w-button"
+              onClick={() => {
+                // console.log(isRegistered);
+                // if (event === eventsArray[4]) {
+                //   return;
+                // }
 
-              if (id === 0 && userArray !== undefined && userArray[2] === 1) {
-                return;
-              }
-              if (id === 2 && userArray !== undefined && userArray[0] === 1) {
-                return;
-              }
-              if (isRegistered === 0) {
-                return handleRegister(id);
-              }
-              router.push("/schedule");
-            }}
-          >
-            {!session ? (
-              // (event === eventsArray[4]) ? <>Maximum Capacity Reached</> : <>Register event</>
-              <>Register event</>
-            ) : event != eventsArray[4] ? (
-              id === 0 ? (
-                <>
-                  {isRegistered === 0 ? (
-                    userArray[2] != 1 ? (
+                if (id === 0 && userArray !== undefined && userArray[2] === 1) {
+                  return;
+                }
+                if (id === 2 && userArray !== undefined && userArray[0] === 1) {
+                  return;
+                }
+                if (isRegistered === 0) {
+                  return handleRegister(id);
+                }
+                router.push("/schedule");
+              }}
+            >
+              {!session ? (
+                // (event === eventsArray[4]) ? <>Maximum Capacity Reached</> : <>Register event</>
+                <>Register event</>
+              ) : event != eventsArray[4] ? (
+                id === 0 ? (
+                  <>
+                    {isRegistered === 0 ? (
+                      userArray[2] != 1 ? (
+                        <>
+                          Register<strong>→</strong>{" "}
+                        </>
+                      ) : (
+                        <>Clashing with Innoventure</>
+                      )
+                    ) : (
+                      <>
+                        Go to schedule<strong>→</strong>{" "}
+                      </>
+                    )}
+                  </>
+                ) : id === 2 ? (
+                  <>
+                    {isRegistered === 0 ? (
+                      userArray[0] != 1 ? (
+                        <>
+                          Register<strong>→</strong>{" "}
+                        </>
+                      ) : (
+                        <>Clashing with Impetus</>
+                      )
+                    ) : (
+                      <>
+                        Go to schedule<strong>→</strong>{" "}
+                      </>
+                    )}
+                  </>
+                ) : (
+                  <>
+                    {isRegistered === 0 ? (
                       <>
                         Register<strong>→</strong>{" "}
                       </>
                     ) : (
-                      <>Clashing with Innoventure</>
-                    )
-                  ) : (
-                    <>
-                      Go to schedule<strong>→</strong>{" "}
-                    </>
-                  )}
-                </>
-              ) : id === 2 ? (
-                <>
-                  {isRegistered === 0 ? (
-                    userArray[0] != 1 ? (
                       <>
-                        Register<strong>→</strong>{" "}
+                        Go to schedule<strong>→</strong>{" "}
                       </>
-                    ) : (
-                      <>Clashing with Impetus</>
-                    )
-                  ) : (
-                    <>
-                      Go to schedule<strong>→</strong>{" "}
-                    </>
-                  )}
-                </>
+                    )}
+                  </>
+                  // )) : (<>Maximum Capacity Reached</>)}
+                )
               ) : (
                 <>
-                  {isRegistered === 0 ? (
-                    <>
-                      Register<strong>→</strong>{" "}
-                    </>
-                  ) : (
-                    <>
-                      Go to schedule<strong>→</strong>{" "}
-                    </>
-                  )}
+                  {" "}
+                  Go to schedule<strong>→</strong>{" "}
                 </>
-                // )) : (<>Maximum Capacity Reached</>)}
-              )
-            ) : (
-              <>
-                {" "}
-                Go to schedule<strong>→</strong>{" "}
-              </>
-            )}
-            {/* <strong>→</strong>{" "} */}
-          </button>
-          {/* <button className="btn_card_last w-button">
-                        View Details<strong>→</strong>{" "}
-                      </button> */}
-        </div>
+              )}
+              {/* <strong>→</strong>{" "} */}
+            </button>
+          </div>
+            {/* <button className="btn_card_last w-button">
+                          View Details<strong>→</strong>{" "}
+                        </button> */}
+          </div>
       </div>
     </>
   );
