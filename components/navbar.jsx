@@ -257,7 +257,7 @@ export default function Navbar({ session }) {
                   {dropdown2 && (
                     <div className="z-10 absolute right-0 mt-2 w-full origin-top-right rounded-md shadow-lg md:w-32">
                       <div className="dark-mode:bg-gray-800 rounded-md bg-white px-2 py-2 shadow">
-                        {regArray[2] ? (
+                        {regArray[0] ? (
                           <Link
                             className="dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0"
                             onClick={() => {
@@ -271,7 +271,7 @@ export default function Navbar({ session }) {
                           >
                             Yantra
                           </Link>
-                        ) : null}
+                        ) : "Not registered"}
                       </div>
                     </div>
                   )}
