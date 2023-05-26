@@ -66,7 +66,7 @@ export default function MemberDashboard({ userData, eventName, session }) {
       <div className="teams_sec mt-[-5vh]">
         <ToastContainer />
         <div className="search">
-          <div className="w-form text-center w-[100%] text-[2rem]">
+          <div className="w-form text-center w-[100%] text-[2rem] text-white">
             Team Name : {userData.teamName}
           </div>
         </div>

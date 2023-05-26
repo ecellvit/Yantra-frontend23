@@ -68,7 +68,7 @@ export default function Navbar({ session }) {
 
   return (
     <>
-      <div className="dark-mode:text-gray-200 dark-mode:bg-gray-800 w-full bg-gray-900 text-gray-100">
+      <div className="dark-mode:text-slate-200 dark-mode:bg-slate-800 w-full bg-[#1C1D20] text-slate-100">
         <div
           x-data="{ open: false }"
           className="mx-auto flex max-w-screen-xl flex-col px-4 md:flex-row md:items-center md:justify-between md:px-6 lg:px-8"
@@ -115,7 +115,7 @@ export default function Navbar({ session }) {
             } flex-grow flex-col pb-4 md:flex md:flex-row md:justify-end md:pb-0`}
           >
             <Link
-              className={`bg-gray-900 focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg bg-transparent px-4 py-2 text-left text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0 md:ml-4 md:inline md:w-auto`}
+              className={`bg-[#1C1D20] focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg bg-transparent px-4 py-2 text-left text-sm font-semibold hover:bg-slate-700 hover:text-slate-100 focus:bg-slate-700 focus:text-slate-100 focus:outline-none md:mt-0 md:ml-4 md:inline md:w-auto`}
               style={{ backgroundColor: pathname === "/" && "#374151" }}
               onClick={() => {
                 setRespHidden(true);
@@ -127,7 +127,7 @@ export default function Navbar({ session }) {
             {!(regArray[0] === 0 && regArray[1] === 0 && regArray[2] === 0 && regArray[3]===0 && regArray[4]===0) &&
               session && (
                 <Link
-                  className={`focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg bg-transparent px-4 py-2 text-left text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0 md:ml-4 md:inline md:w-auto`}
+                  className={`focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg bg-transparent px-4 py-2 text-left text-sm font-semibold hover:bg-slate-700 hover:text-slate-100 focus:bg-slate-700 focus:text-slate-100 focus:outline-none md:mt-0 md:ml-4 md:inline md:w-auto`}
                   style={{
                     backgroundColor: pathname === "/schedule" && "#374151",
                   }}
@@ -146,7 +146,7 @@ export default function Navbar({ session }) {
                   setDropdown1(!dropdown1);
                   setDropdown2(false);
                 }}
-                className={`focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg bg-transparent px-4 py-2 text-left text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0 md:ml-4 md:inline md:w-auto`}
+                className={`focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg bg-transparent px-4 py-2 text-left text-sm font-semibold hover:bg-slate-700 hover:text-slate-100 focus:bg-slate-700 focus:text-slate-100 focus:outline-none md:mt-0 md:ml-4 md:inline md:w-auto`}
                 style={{
                   backgroundColor:
                     pathname.split("/")[1] == "events" && "#374151",
@@ -167,9 +167,9 @@ export default function Navbar({ session }) {
               </button>
               {dropdown1 && (
                 <div className="z-10 absolute right-0 mt-2 w-full origin-top-right rounded-md shadow-lg md:w-32">
-                  <div className="dark-mode:bg-gray-800 rounded-md bg-gray-900 px-2 py-2 shadow">
+                  <div className="dark-mode:bg-slate-800 rounded-md bg-[#1C1D20] px-2 py-2 shadow">
                     <Link
-                      className="bg-gray-900 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0"
+                      className="bg-[#1C1D20] focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-slate-700 hover:text-slate-100 focus:bg-slate-700 focus:text-slate-100 focus:outline-none md:mt-0"
                       onClick={() => {
                         setRespHidden(true);
                       }}
@@ -182,7 +182,7 @@ export default function Navbar({ session }) {
                       Yantra
                     </Link>
                     <Link
-                      className="bg-gray-900 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0"
+                      className="bg-[#1C1D20] focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-slate-700 hover:text-slate-100 focus:bg-slate-700 focus:text-slate-100 focus:outline-none md:mt-0"
                       onClick={() => {
                         setRespHidden(true);
                       }}
@@ -195,7 +195,7 @@ export default function Navbar({ session }) {
                       Workshop 1
                     </Link>
                     <Link
-                      className="bg-gray-900 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0"
+                      className="bg-[#1C1D20] focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-slate-700 hover:text-slate-100 focus:bg-slate-700 focus:text-slate-100 focus:outline-none md:mt-0"
                       onClick={() => {
                         setRespHidden(true);
                       }}
@@ -208,7 +208,7 @@ export default function Navbar({ session }) {
                       Workshop 2
                     </Link>
                     <Link
-                      className="bg-gray-900 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0"
+                      className="bg-[#1C1D20] focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-slate-700 hover:text-slate-100 focus:bg-slate-700 focus:text-slate-100 focus:outline-none md:mt-0"
                       onClick={() => {
                         setRespHidden(true);
                       }}
@@ -235,7 +235,7 @@ export default function Navbar({ session }) {
                     }}
                     className={`${
                       pathname.split("/")[1] == "manage"
-                    } focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg bg-transparent px-4 py-2 text-left text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0 md:ml-4 md:inline md:w-auto`}
+                    } focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg bg-transparent px-4 py-2 text-left text-sm font-semibold hover:bg-slate-700 hover:text-slate-100 focus:bg-slate-700 focus:text-slate-100 focus:outline-none md:mt-0 md:ml-4 md:inline md:w-auto`}
                     style={{
                       backgroundColor:
                         pathname.split("/")[1] == "manage" && "#374151",
@@ -256,10 +256,10 @@ export default function Navbar({ session }) {
                   </button>
                   {dropdown2 && (
                     <div className="z-10 absolute right-0 mt-2 w-full origin-top-right rounded-md shadow-lg md:w-32">
-                      <div className="dark-mode:bg-gray-800 rounded-md bg-gray-900 px-2 py-2 shadow">
+                      <div className="dark-mode:bg-slate-800 rounded-md bg-[#1C1D20] px-2 py-2 shadow">
                         {regArray[0] ? (
                           <Link
-                            className="bg-gray-900 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0"
+                            className="bg-[#1C1D20] focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-slate-700 hover:text-slate-100 focus:bg-slate-700 focus:text-slate-100 focus:outline-none md:mt-0"
                             onClick={() => {
                               setRespHidden(true);
                             }}
@@ -282,7 +282,7 @@ export default function Navbar({ session }) {
                 session ? logoutHandler() : loginHandler();
                 setRespHidden(true);
               }}
-              className="focus:shadow-outline mt-2 rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0 md:ml-4"
+              className="focus:shadow-outline mt-2 rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-slate-700 hover:text-slate-100 focus:bg-slate-700 focus:text-slate-100 focus:outline-none md:mt-0 md:ml-4"
               href="#"
             >
               {session ? "Sign Out" : "Sign In"}
