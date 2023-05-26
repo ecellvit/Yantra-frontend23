@@ -40,12 +40,12 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
 
           {session ? (
             <div>
-              <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-1" >
+              <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-1">
                 <div className="timeline-element">
                   <NewCard
-                    isRegistered={userArray[2]}
-                    event={eventsArray[2]}
-                    id={2}
+                    isRegistered={userArray[0]}
+                    event={eventsArray[0]}
+                    id={0}
                     eventsArray={eventsArray}
                     userArray={userArray}
                   ></NewCard>
@@ -61,9 +61,9 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                 </div>{" "}
                 <div className="timeline-element">
                   <NewCard
-                    isRegistered={userArray[0]}
-                    event={eventsArray[0]}
-                    id={0}
+                    isRegistered={userArray[2]}
+                    event={eventsArray[2]}
+                    id={2}
                     eventsArray={eventsArray}
                     userArray={userArray}
                   ></NewCard>
@@ -92,12 +92,27 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                   </div>
                   <NewCard
                     isRegistered={0}
+                    event={eventsArray[0]}
+                    id={0}
+                    eventsArray={eventsArray}
+                    userArray={userArray}
+                  ></NewCard>
+                </div>{" "}
+                <div className="timeline-element">
+                  <div className="rod">
+                    <div className="outer_div">
+                      <div className="inner_div"></div>
+                    </div>
+                    <div className="linetimeline"></div>
+                  </div>
+                  <NewCard
+                    isRegistered={0}
                     event={eventsArray[1]}
                     id={1}
                     eventsArray={eventsArray}
                     userArray={userArray}
                   ></NewCard>
-                </div>{" "}
+                </div>
                 <div className="timeline-element">
                   <div className="rod">
                     <div className="outer_div">
@@ -124,21 +139,6 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                     isRegistered={0}
                     event={eventsArray[3]}
                     id={3}
-                    eventsArray={eventsArray}
-                    userArray={userArray}
-                  ></NewCard>
-                </div>
-                <div className="timeline-element">
-                  <div className="rod">
-                    <div className="outer_div">
-                      <div className="inner_div"></div>
-                    </div>
-                    <div className="linetimeline"></div>
-                  </div>
-                  <NewCard
-                    isRegistered={0}
-                    event={eventsArray[0]}
-                    id={0}
                     eventsArray={eventsArray}
                     userArray={userArray}
                   ></NewCard>
