@@ -113,11 +113,7 @@ export default function NewCard({
     <>
       <div className="timeline_wrapper ml-3">
         <div className="border-white rounded-3xl border-4 p-8">
-          <img
-            className={`card_cont`}
-            src={event?.imgUrl}
-            alt="event_image"
-          />
+          <img className={`card_cont`} src={event?.imgUrl} alt="event_image" />
           <h1 className="card_h1 text-center">{event?.title} </h1>
           <div className="flex justify-center items-center">
             <p className="card_para">{event?.description}</p>
@@ -168,7 +164,9 @@ export default function NewCard({
                           Register<strong>→</strong>{" "}
                         </>
                       ) : (
-                        <>Clashing with Innoventure</>
+                        <>
+                          Register<strong>→</strong>{" "}
+                        </>
                       )
                     ) : (
                       <>
@@ -184,7 +182,9 @@ export default function NewCard({
                           Register<strong>→</strong>{" "}
                         </>
                       ) : (
-                        <>Clashing with Impetus</>
+                        <>
+                          Register<strong>→</strong>{" "}
+                        </>
                       )
                     ) : (
                       <>
@@ -215,10 +215,10 @@ export default function NewCard({
               {/* <strong>→</strong>{" "} */}
             </button>
           </div>
-            {/* <button className="btn_card_last w-button">
+          {/* <button className="btn_card_last w-button">
                           View Details<strong>→</strong>{" "}
                         </button> */}
-          </div>
+        </div>
       </div>
     </>
   );
