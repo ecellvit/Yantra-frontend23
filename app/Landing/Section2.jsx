@@ -20,8 +20,8 @@ export default function Section2() {
           <img src="ecellblue.png" width="425px" className="image" />
         </div>
         <div className="about_txt_wrap">
-          <h1 className="about_h1">About E-Summit’23</h1>
-          <p className="about_para">
+          <h1 className="about_h1 text-white">About E-Summit’23</h1>
+          <p className="about_para text-white">
             <strong className="bld">E-Summit</strong> is the conclave that
             insinuates attendees to the entrepreneurial world. It is a fusion of
             insightful sessions and visionary activities disguised as a single

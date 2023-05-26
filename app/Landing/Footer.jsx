@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="footer-cont">
         <div className="lfoot">
           <div className="footer_logo">
-            <img src="footerlogo.png" width="338.5" alt="" className="img2" />
+            <img src="ignitlogo.png" width="338.5" alt="" className="img2" />
           </div>
           <div className="contact_footer">
             <img src="call.png" width="23.5" alt="" />
@@ -35,7 +35,7 @@ export default function Footer() {
             set up a diverse pool of investors, evaluators and mentors.
           </p>
           <div className="foot_line"></div>
-          <h1 className="develop_h1">Designed and developed by:</h1>
+          {/* <h1 className="develop_h1">Designed and developed by:</h1>
           <div className="dev_img_wrap">
             <a
               href="https://www.linkedin.com/in/aryak-singh-73686422b/"
@@ -106,11 +106,11 @@ export default function Footer() {
                 alt="naitik"
                 className="img_dev"
               />
-            </a>
+            </a> */}
             {/* <a className="developers">
               <img src="developer.jpg" alt="" className="img_dev" />
             </a> */}
-          </div>
+          {/* </div> */}
         </div>
         <div className="rfoot">
           <a href="https://www.facebook.com/ecellvit/" className="foot_img">
