@@ -4,7 +4,7 @@ import "../../../../styles/landing.css";
 
 import { useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
 export default function RoundZero({ accessTokenBackend }) {
   const [file, setFile] = useState(null);
@@ -19,7 +19,7 @@ export default function RoundZero({ accessTokenBackend }) {
   const [final, setFinal] = useState();
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_SERVER}/api/ehack/roundOne`, {
+    fetch(`${process.env.NEXT_PUBLIC_SERVER}/api/yantra/roundOne`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -61,8 +61,8 @@ export default function RoundZero({ accessTokenBackend }) {
     //   setWarning("Please upload only ppts or pdfs");
     if (name.value === "") {
       setWarning("Please Enter Project Name");
-    // } else if (video.value === "") {
-    //   setWarning("Please Enter Video URL");
+      // } else if (video.value === "") {
+      //   setWarning("Please Enter Video URL");
     } else if (gith.value === "") {
       setWarning("Please Enter Project Github Organization");
     } else if (file.value === "") {
@@ -88,7 +88,7 @@ export default function RoundZero({ accessTokenBackend }) {
       // // request finished event
       // request.addEventListener("load", function (e) {
       // const data = JSON.parse(request.response);
-      fetch(`${process.env.NEXT_PUBLIC_SERVER}/api/ehack/roundOne`, {
+      fetch(`${process.env.NEXT_PUBLIC_SERVER}/api/yantra/roundOne`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -141,7 +141,7 @@ export default function RoundZero({ accessTokenBackend }) {
 
   // function handleDescChange(event) {
   //   let descrip = document.getElementById("projDesc");
-  //   fetch(`${process.env.NEXT_PUBLIC_SERVER}/api/ehack/roundOne`, {
+  //   fetch(`${process.env.NEXT_PUBLIC_SERVER}/api/yantra/roundOne`, {
   //     method: "POST",
   //     headers: {
   //       "Content-Type": "application/json",

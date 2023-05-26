@@ -22,7 +22,7 @@ async function getUserData(session) {
 
 async function leaderReceivedReq(session, teamId) {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_SERVER}/api/ehack/requests/${teamId}`,
+    `${process.env.NEXT_PUBLIC_SERVER}/api/yantra/requests/${teamId}`,
     {
       method: "GET",
       headers: {
@@ -41,10 +41,13 @@ async function leaderReceivedReq(session, teamId) {
 }
 
 export default async function receivedJoinRequest() {
-  const eventName = "eHack";
+  const eventName = "yantra";
   const session = await getServerSession(authOptions);
   const userData = await getUserData(session);
-  const data = await leaderReceivedReq(session, userData?.user.eHackTeamId._id);
+  const data = await leaderReceivedReq(
+    session,
+    userData?.user.yantraTeamId._id
+  );
   const requests = data.requests;
   const teamId = userData?.user[eventName + "TeamId"]._id;
   return (

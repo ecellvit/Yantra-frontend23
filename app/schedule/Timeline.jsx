@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 export default function Timeline({ userArray, eventsArray, session }) {
   const eventCodes = [
     "IMPETUS",
-    "EHACK",
+    "yantra",
     "INNOVENTURE",
     "EVENT_4",
     "EVENT_5",

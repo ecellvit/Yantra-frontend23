@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const eventCodes = [
   "IMPETUS",
-  "EHACK",
+  "YANTRA",
   "INNOVENTURE",
   "EVENT_4",
   "EVENT_5",

@@ -22,7 +22,7 @@ async function getUserData(session) {
 }
 async function requestSentData(session) {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_SERVER}/api/user/ehack/requests`,
+    `${process.env.NEXT_PUBLIC_SERVER}/api/user/yantra/requests`,
     {
       method: "GET",
       headers: {
@@ -41,9 +41,9 @@ async function requestSentData(session) {
 }
 
 async function getAllteams(session, page) {
-  // const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER}/api/ehack?page=${prev.page}&limit=${prev.limit}`, {
+  // const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER}/api/yantra?page=${prev.page}&limit=${prev.limit}`, {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_SERVER}/api/ehack?${page}=1&limit=9`,
+    `${process.env.NEXT_PUBLIC_SERVER}/api/yantra?${page}=1&limit=9`,
     {
       method: "GET",
       headers: {
@@ -62,7 +62,7 @@ async function getAllteams(session, page) {
 }
 
 export default async function JoinTeams() {
-  const eventName = "ehack";
+  const eventName = "yantra";
   const session = await getServerSession(authOptions);
   const userData = await getUserData(session);
   const sentData = await requestSentData(session);
