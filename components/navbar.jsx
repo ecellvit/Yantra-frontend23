@@ -68,14 +68,14 @@ export default function Navbar({ session }) {
 
   return (
     <>
-      <div className="dark-mode:text-gray-200 dark-mode:bg-gray-800 w-full bg-[#1C1D20] text-white">
+      <div className="dark-mode:text-gray-200 dark-mode:bg-gray-800 w-full bg-gray-900 text-gray-100">
         <div
           x-data="{ open: false }"
           className="mx-auto flex max-w-screen-xl flex-col px-4 md:flex-row md:items-center md:justify-between md:px-6 lg:px-8"
         >
           <div className="flex flex-row items-center justify-between p-4">
             <Link
-              className="dark-mode:text-white focus:shadow-outline rounded-lg text-lg font-semibold tracking-widest text-white focus:outline-none"
+              className="dark-mode:text-white focus:shadow-outline rounded-lg text-lg font-semibold tracking-widest  focus:outline-none"
               onClick={() => {
                 setRespHidden(true);
               }}
@@ -115,8 +115,8 @@ export default function Navbar({ session }) {
             } flex-grow flex-col pb-4 md:flex md:flex-row md:justify-end md:pb-0`}
           >
             <Link
-              className={`dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg bg-transparent px-4 py-2 text-left text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0 md:ml-4 md:inline md:w-auto`}
-              style={{ backgroundColor: pathname === "/" && "#E5E7EB" }}
+              className={`bg-gray-900 focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg bg-transparent px-4 py-2 text-left text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0 md:ml-4 md:inline md:w-auto`}
+              style={{ backgroundColor: pathname === "/" && "#374151" }}
               onClick={() => {
                 setRespHidden(true);
               }}
@@ -127,9 +127,9 @@ export default function Navbar({ session }) {
             {!(regArray[0] === 0 && regArray[1] === 0 && regArray[2] === 0 && regArray[3]===0 && regArray[4]===0) &&
               session && (
                 <Link
-                  className={`dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg bg-transparent px-4 py-2 text-left text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0 md:ml-4 md:inline md:w-auto`}
+                  className={`focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg bg-transparent px-4 py-2 text-left text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0 md:ml-4 md:inline md:w-auto`}
                   style={{
-                    backgroundColor: pathname === "/schedule" && "#E5E7EB",
+                    backgroundColor: pathname === "/schedule" && "#374151",
                   }}
                   onClick={() => {
                     setRespHidden(true);
@@ -146,10 +146,10 @@ export default function Navbar({ session }) {
                   setDropdown1(!dropdown1);
                   setDropdown2(false);
                 }}
-                className={`dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg bg-transparent px-4 py-2 text-left text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0 md:ml-4 md:inline md:w-auto`}
+                className={`focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg bg-transparent px-4 py-2 text-left text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0 md:ml-4 md:inline md:w-auto`}
                 style={{
                   backgroundColor:
-                    pathname.split("/")[1] == "events" && "#E5E7EB",
+                    pathname.split("/")[1] == "events" && "#374151",
                 }}
               >
                 <span ref={eventsRefSpan}>Events</span>
@@ -167,55 +167,55 @@ export default function Navbar({ session }) {
               </button>
               {dropdown1 && (
                 <div className="z-10 absolute right-0 mt-2 w-full origin-top-right rounded-md shadow-lg md:w-32">
-                  <div className="dark-mode:bg-gray-800 rounded-md bg-white px-2 py-2 shadow">
+                  <div className="dark-mode:bg-gray-800 rounded-md bg-gray-900 px-2 py-2 shadow">
                     <Link
-                      className="dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0"
+                      className="bg-gray-900 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0"
                       onClick={() => {
                         setRespHidden(true);
                       }}
                       href="/events/yantra"
                       style={{
                         backgroundColor:
-                          pathname == "/events/yantra" && "#E5E7EB",
+                          pathname == "/events/yantra" && "#374151",
                       }}
                     >
                       Yantra
                     </Link>
                     <Link
-                      className="dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0"
+                      className="bg-gray-900 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0"
                       onClick={() => {
                         setRespHidden(true);
                       }}
                       href="/events/work1"
                       style={{
                         backgroundColor:
-                          pathname == "/events/work1" && "#E5E7EB",
+                          pathname == "/events/work1" && "#374151",
                       }}
                     >
                       Workshop 1
                     </Link>
                     <Link
-                      className="dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0"
+                      className="bg-gray-900 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0"
                       onClick={() => {
                         setRespHidden(true);
                       }}
                       href="/events/work2"
                       style={{
                         backgroundColor:
-                          pathname == "/events/work2" && "#E5E7EB",
+                          pathname == "/events/work2" && "#374151",
                       }}
                     >
                       Workshop 2
                     </Link>
                     <Link
-                      className="dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0"
+                      className="bg-gray-900 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0"
                       onClick={() => {
                         setRespHidden(true);
                       }}
                       href="/events/work3"
                       style={{
                         backgroundColor:
-                          pathname == "/events/work3" && "#E5E7EB",
+                          pathname == "/events/work3" && "#374151",
                       }}
                     >
                       Workshop 3
@@ -235,10 +235,10 @@ export default function Navbar({ session }) {
                     }}
                     className={`${
                       pathname.split("/")[1] == "manage"
-                    } dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg bg-transparent px-4 py-2 text-left text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0 md:ml-4 md:inline md:w-auto`}
+                    } focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg bg-transparent px-4 py-2 text-left text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0 md:ml-4 md:inline md:w-auto`}
                     style={{
                       backgroundColor:
-                        pathname.split("/")[1] == "manage" && "#E5E7EB",
+                        pathname.split("/")[1] == "manage" && "#374151",
                     }}
                   >
                     <span ref={manageRefSpan}>Manage</span>
@@ -256,17 +256,17 @@ export default function Navbar({ session }) {
                   </button>
                   {dropdown2 && (
                     <div className="z-10 absolute right-0 mt-2 w-full origin-top-right rounded-md shadow-lg md:w-32">
-                      <div className="dark-mode:bg-gray-800 rounded-md bg-white px-2 py-2 shadow">
+                      <div className="dark-mode:bg-gray-800 rounded-md bg-gray-900 px-2 py-2 shadow">
                         {regArray[0] ? (
                           <Link
-                            className="dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0"
+                            className="bg-gray-900 focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0"
                             onClick={() => {
                               setRespHidden(true);
                             }}
                             href="/manage/yantra"
                             style={{
                               backgroundColor:
-                                pathname == "/manage/yantra" && "#E5E7EB",
+                                pathname == "/manage/yantra" && "#374151",
                             }}
                           >
                             Yantra
@@ -282,7 +282,7 @@ export default function Navbar({ session }) {
                 session ? logoutHandler() : loginHandler();
                 setRespHidden(true);
               }}
-              className="dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 focus:shadow-outline mt-2 rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-200 hover:text-gray-900 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:mt-0 md:ml-4"
+              className="focus:shadow-outline mt-2 rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-gray-700 hover:text-gray-100 focus:bg-gray-700 focus:text-gray-100 focus:outline-none md:mt-0 md:ml-4"
               href="#"
             >
               {session ? "Sign Out" : "Sign In"}

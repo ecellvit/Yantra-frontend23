@@ -991,7 +991,7 @@
   font-family: Inter, sans-serif;
 }
 .subnav {
-  @apply flex justify-between items-center bg-[#1C1D20] bg-opacity-80 text-center mx-0 px-10 py-2.5;
+  @apply flex justify-between items-center bg-[#3C3D40] bg-opacity-80 text-center mx-0 px-10 py-2.5;
 }
 .right_subnav {
   @apply flex min-w-[20vw] items-center;
@@ -1000,7 +1000,7 @@
   @apply text-white text-base leading-5 ml-2.5 px-[15px] py-[9px] rounded-[5px] bg-[#CE230F];
 }
 .ehack_cont {
-  @apply flex w-[70vw] min-h-[60vh] flex-col items-center bg-[#1C1D20] bg-opacity-60 mx-auto my-[7vh] p-5;
+  @apply flex w-[70vw] min-h-[60vh] flex-col items-center bg-[#2C2D30] bg-opacity-80 mx-auto my-[7vh] p-5;
 }
 .team {
   @apply min-w-[50vw] mb-2.5 mx-auto pb-2 px-3;
