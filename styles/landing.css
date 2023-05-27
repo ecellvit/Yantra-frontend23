@@ -252,6 +252,19 @@
   .card_btn {
     @apply bg-[hsla(0,0%,66.7%,0.2)] text-base font-medium mt-[20px] px-[15px] py-[9px] rounded-[5px];
     font-family: Inter, sans-serif;
+    transition: 0.4s;
+  }
+  .card_btn:hover{
+    @apply bg-white text-black;
+    transform: scale(1.2);
+    transition: 0.4s;
+  }
+  .card_btn strong{
+    transition: 0.1s;
+  }
+  .card_btn strong:hover{
+    padding-left: 0.2rem;
+    transition: 0.1s;
   }
   .form_section {
     @apply flex min-h-screen bg-[#1c1d20] text-white;
