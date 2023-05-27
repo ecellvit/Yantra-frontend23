@@ -101,10 +101,10 @@ export default function DetailsForm({ accessTokenBackend }) {
           </div>
           <div className="text_form">
             <h1 className="form_l_h1">
-              E-SUMMIT’23
+              IGNITIA
               <br />‍
             </h1>
-            <p className="form_date">30th March-2nd april</p>
+            <p className="form_date">1st June-8th June</p>
           </div>
         </div>
         <div className="form_sec_r">

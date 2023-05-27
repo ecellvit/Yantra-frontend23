@@ -31,7 +31,7 @@ export default async function Home() {
 
   const check = session && userArray[0];
   return (
-    <div className="event-sec">
+    <div className="event-sec text-white">
       <div className="event_wrapper">
         <h1 className="event_h1">
           Yantra

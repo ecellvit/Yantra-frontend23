@@ -264,7 +264,7 @@
   }
 
   .form_sec_l {
-    @apply w-[50vw] bg-[url("https://res.cloudinary.com/dchq25bxl/image/upload/v1679337272/template_1-min_iils6g.png")] bg-[50%_50%] bg-cover text-white pl-[20px];
+    @apply w-[50vw] bg-[url("https://res.cloudinary.com/dl53ixk7b/image/upload/v1685160331/bgform_uidw9v.png")] bg-[50%_50%] bg-cover text-white pl-[20px];
   }
   .form_sec_r {
     @apply w-[60vw] mt-[10vh];
@@ -859,7 +859,8 @@
   @apply flex min-h-screen;
 }
 .event-sec {
-  @apply w-screen min-h-[95vh] bg-[url("https://res.cloudinary.com/dchq25bxl/image/upload/v1679244337/bg_f6aif4.png")] bg-[50%_50%] bg-cover text-white text-base leading-5 font-normal mt-0 mx-auto pl-0;
+  /* bg-[url("https://res.cloudinary.com/dchq25bxl/image/upload/v1679244337/bg_f6aif4.png")] bg-[50%_50%] bg-cover */
+  @apply w-screen min-h-[95vh]  text-white text-base leading-5 font-normal mt-0 mx-auto pl-0;
   font-family: Inter, sans-serif;
 }
 .form_sec_r {
