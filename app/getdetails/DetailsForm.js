@@ -97,11 +97,11 @@ export default function DetailsForm({ accessTokenBackend }) {
       <div className="form_section">
         <div className="form_sec_l">
           <div className="form_logo">
-            <img src="logo_ecel.png" alt="logo" className="image" />
+            <img src="yantra_logo.png" alt="logo" className="image" />
           </div>
           <div className="text_form">
             <h1 className="form_l_h1">
-              IGNITIA
+              YANTRA
               <br />‍
             </h1>
             <p className="form_date">1st June-8th June</p>
