@@ -840,7 +840,7 @@
   font-family: Inter, sans-serif;
 }
 .event_wrapper {
-  @apply w-[75vw] text-left mx-auto pt-0 leading-[40px];
+  @apply w-[75vw] text-left mx-auto pt-0 leading-[40px] bg-[#1C1D20] bg-opacity-80 p-10;
 }
 .form_r_h1 {
   @apply font-bold mt-5 mb-2.5 pl-[60px];
@@ -859,7 +859,7 @@
   @apply flex min-h-screen;
 }
 .event-sec {
-  @apply w-screen min-h-[95vh] bg-[url("https://res.cloudinary.com/dchq25bxl/image/upload/v1679244337/bg_f6aif4.png")] bg-[50%_50%] bg-cover text-white text-base leading-5 font-normal mt-0 mx-auto pl-0;
+  @apply w-screen min-h-[95vh]  text-white text-base leading-5 font-normal max-h-screen mt-20 mb-2 mx-auto pl-0;
   font-family: Inter, sans-serif;
 }
 .form_sec_r {

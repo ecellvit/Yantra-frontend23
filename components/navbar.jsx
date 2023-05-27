@@ -81,7 +81,7 @@ export default function Navbar({ session }) {
               }}
               href={"/"}
             >
-              YANTRA’23
+              IGNITIA’23
             </Link>
             <button
               onClick={() => {
