@@ -254,7 +254,7 @@
     font-family: Inter, sans-serif;
   }
   .form_section {
-    @apply flex min-h-screen bg-white;
+    @apply flex min-h-screen bg-[#1c1d20] text-white;
   }
   .text_form {
     @apply flex flex-col items-center mx-auto;
@@ -264,7 +264,7 @@
   }
 
   .form_sec_l {
-    @apply w-[50vw] bg-[url("https://res.cloudinary.com/dchq25bxl/image/upload/v1679337272/template_1-min_iils6g.png")] bg-[50%_50%] bg-cover text-white pl-[20px];
+    @apply w-[50vw] bg-[url('/volcano2.svg')] bg-[50%_50%] bg-cover text-white pl-[20px];
   }
   .form_sec_r {
     @apply w-[60vw] mt-[10vh];
@@ -302,7 +302,7 @@
     @apply px-[60px];
   }
   .formbtn {
-    @apply block w-[15vw] bg-white text-black text-base leading-[20px] font-medium text-center mt-[20px] rounded-[20px] border-2 border-solid border-black;
+    @apply block w-[15vw] bg-[#1c1d20] text-base leading-[20px] font-medium text-center mt-[20px] rounded-[20px] border-2 border-solid border-black;
     font-family: Poppins, sans-serif;
   }
   .sound_sec {
