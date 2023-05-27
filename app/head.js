@@ -1,30 +1,30 @@
 export default function Head() {
   return (
     <>
-      <title>E-Summit&#x27;23 by E-Cell VIT</title>
+      <title>IGNITIA&#x27;23 by E-Cell VIT</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta charset="utf-8" />
 
       <meta
-        content="E-Summit is the conclave that insinuates attendees to the entrepreneurial world. It is a fusion of insightful sessions and visionary activities disguised as a single event that opens the realm of networking and broadens your perspective on business. E-Summit aims to inculcate a sense of innovation in young people through its exclusive collection of enlivening events, enthralling workshops, and exciting expos, and the perfect panel of spectacular speakers."
+        content="IGNITIA is the conclave that insinuates attendees to the entrepreneurial world. It is a fusion of insightful sessions and visionary activities disguised as a single event that opens the realm of networking and broadens your perspective on business. E-Summit aims to inculcate a sense of innovation in young people through its exclusive collection of enlivening events, enthralling workshops, and exciting expos, and the perfect panel of spectacular speakers."
         name="description"
       />
-      <meta content="E-Summit&#x27;23 by E-Cell VIT" property="og:title" />
+      <meta content="IGNITIA&#x27;23 by E-Cell VIT" property="og:title" />
       <meta
-        content="E-Summit is the conclave that insinuates attendees to the entrepreneurial world. It is a fusion of insightful sessions and visionary activities disguised as a single event that opens the realm of networking and broadens your perspective on business. E-Summit aims to inculcate a sense of innovation in young people through its exclusive collection of enlivening events, enthralling workshops, and exciting expos, and the perfect panel of spectacular speakers."
+        content="IGNITIA is the conclave that insinuates attendees to the entrepreneurial world. It is a fusion of insightful sessions and visionary activities disguised as a single event that opens the realm of networking and broadens your perspective on business. E-Summit aims to inculcate a sense of innovation in young people through its exclusive collection of enlivening events, enthralling workshops, and exciting expos, and the perfect panel of spectacular speakers."
         property="og:description"
       />
       <meta
-        content="https://res.cloudinary.com/dl53ixk7b/image/upload/v1679374737/ecellblue_xh4wbv.png"
+        content="Group.svg"
         property="og:image"
       />
-      <meta content="E-Summit&#x27;23 by E-Cell VIT" property="twitter:title" />
+      <meta content="IGNITIA&#x27;23 by E-Cell VIT" property="twitter:title" />
       <meta
         content="E-Summit is the conclave that insinuates attendees to the entrepreneurial world. It is a fusion of insightful sessions and visionary activities disguised as a single event that opens the realm of networking and broadens your perspective on business. E-Summit aims to inculcate a sense of innovation in young people through its exclusive collection of enlivening events, enthralling workshops, and exciting expos, and the perfect panel of spectacular speakers."
         property="twitter:description"
       />
       <meta
-        content="https://res.cloudinary.com/dl53ixk7b/image/upload/v1679374737/ecellblue_xh4wbv.png"
+        content="Group.svg"
         property="twitter:image"
       />
       <meta property="og:type" content="website" />
