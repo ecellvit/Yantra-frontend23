@@ -23,7 +23,7 @@ export default function RegButton({ userArray, check }) {
 
   function handleRegister(eventCode) {
     if (!session) {
-      handleRegisterwithLogin(3);
+      handleRegisterwithLogin(1);
     }
     if (session) {
       //console.log("here");
@@ -83,19 +83,19 @@ export default function RegButton({ userArray, check }) {
         // //console.log(isRegistered);
         if (userArray) {
           //console.log(userArray);
-          if (userArray[3]) {
-            router.push("/schedule/");
+          if (userArray[1]) {
+            router.push("/manage/yantra");
           } else {
             //console.log("here");
-            return handleRegister(3);
+            return handleRegister(1);
           }
         } else {
           //console.log("here");
-          return handleRegister(3);
+          return handleRegister(1);
         }
       }}
     >
-      {`${check ? "Go to Schedule" : "Register Now"}`}
+      {`${check ? "Go to Dashboard" : "Register Now"}`}
     </button>
   );
 }

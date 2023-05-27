@@ -1,9 +1,8 @@
 import { authOptions } from "@/pages/api/auth/[...nextauth]";
-import Link from "next/link";
-import RegButton from "./RegButton";
-
 import { getServerSession } from "next-auth";
+import Link from "next/link";
 import "../../../styles/landing.css";
+import RegButton from "./RegButton";
 
 async function getUserData(token) {
   const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER}/api/user`, {
@@ -29,49 +28,53 @@ export default async function Home() {
     const userData = await getUserData(session);
     userArray = userData?.user.registeredEvents;
   }
-  //console.log(userArray);
-  const check = session && userArray[4];
+
+  const check = session && userArray[0];
   return (
     <div className="event-sec">
       <div className="event_wrapper">
-        <h1 className="event_h2">
-          Trading Workshop
+        <h1 className="event_h1">
+          Yantra
           <br />
         </h1>
         <p className="event_date ">
-          Date &amp; Time : 01st April 2023, 4:00 PM
+          Date &amp; Time : 31st March 2023, 9:00 PM
         </p>
         <p className="event_para">
-          Venue : Ambedkar Auditorium
+          Venue: Sarojini Naidu SJT
           <br />
         </p>
         <p className="form_para_small">
-          Graphs, Candlestick, F&O, Fundamental and Technical Analysis are the
-          buzzwords of today’s more progressive and aware youth interested in
-          creating value and personal wealth. This trading workshop from the
-          Industry Experts will pave the path for a stronger fundamental
-          understanding of the stock market and the trends. This workshop will
-          provide you a great insight of this equity market, from understanding
-          strategies to patterns and everything in between; Trading Workshop is
-          the place to be.
+          An overnight hackathon that provides an opportunity for participants
+          to put their problem-solving skills to test. With different tracks
+          covering various real world problems in the business hemisphere,
+          participants will be able to showcase their expertise and creativity
+          while working alongside like-minded individuals. Whether you are a
+          seasoned hacker or just starting out, "E-Hack" is a unique chance to
+          work on challenging projects and build your skills in this competitive
+          arena of entrepreneurship and technology.
           <br />
         </p>
-        {/* <div className="evet_price_wrap">
+        <div className="evet_price_wrap">
           <div className="price_wrap">
-            <p className="para_med_event">1st</p>
-            <p className="para_bold_event">Coming Soon</p>
+            {/* <p className="para_med_event">Prize Pool</p> */}
+            <p className="para_bold_event">Prize Pool - Rs 75,000</p>
           </div>
-          <div className="price_wrap">
+          {/* <div className="price_wrap">
             <p className="para_med_event">2nd</p>
             <p className="para_bold_event">Coming Soon</p>
           </div>
           <div className="price_wrap">
             <p className="para_med_event">3rd</p>
             <p className="para_bold_event">Coming Soon</p>
-          </div>
-        </div> */}
+          </div> */}
+        </div>
+
         <RegButton check={check} userArray={userArray} />
       </div>
     </div>
   );
 }
+// {session && userArray[1] && <Link classNameName="eventbtn w-button" href="/manage/ehack">
+// Go to Dashboard
+// </Link>}
