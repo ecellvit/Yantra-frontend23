@@ -119,6 +119,6 @@ export default function Card({
           </button>
         </div>
       </div>
-    </>
-  );
+</>
+);
 }

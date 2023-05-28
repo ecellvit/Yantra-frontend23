@@ -997,9 +997,9 @@
     @apply gap-x-2.5 gap-y-2.5;
   }
 }
-/*Create Team*/
+
 .create_cont {
-  /*min-h-screen*/
+
   @apply text-black text-base font-normal;
   font-family: Inter, sans-serif;
 }
@@ -1183,5 +1183,5 @@
   }
   .join_team {
     @apply mb-0 mx-2.5;
-  }
+}
 }
