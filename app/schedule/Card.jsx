@@ -77,13 +77,10 @@ export default function Card({
 
   return (
     <>
-      <div className="timeline_wrapper">
-        <h1 className="date">{event.date}</h1>
+      <div className="mb-10">
+        <h1 className="date text-white">{event.date}</h1>
         <div
-          className="card_cont"
-          style={{
-            backgroundImage: `url(${event.imgUrl})`,
-          }}
+          className="bg-[#4f5055] bg-opacity-80 p-4 rounded-xl"
         >
           <h1 className="card_h1">{event.title} </h1>
           <p className="card_para">{event.description}</p>
@@ -91,11 +88,11 @@ export default function Card({
             <a href={whatsappLink}>Join Whatsapp Group</a>
           </div>
           <div className="card_time">
-            <div className="card_l">
+            <div className="card_l text-white">
               <img src="clock.svg" alt="" className="svg_card" />
               <p className="timepara">{event.time} hours</p>
             </div>
-            <div className="card_r">
+            <div className="card_r text-white">
               <img src="location.svg" alt="" className="svg_card" />
               <p className="timepara">{event.location}</p>
             </div>

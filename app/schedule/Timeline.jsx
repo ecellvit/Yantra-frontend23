@@ -24,19 +24,19 @@ export default function Timeline({ userArray, eventsArray, session }) {
           <div className="timeline-cont">
             <div className="timeline_header bg-transparent">
               <h1 className="about_h1">Registered Events By You</h1>
-              <div className="event_line"></div>
+              {/* <div className="event_line"></div> */}
             </div>
             {userArray.map((registered, index) => {
               if (registered === 1) {
                 return (
                   <>
                     <div className="timeline-element" key={index}>
-                      <div className="rod">
+                      {/* <div className="rod">
                         <div className="outer_div">
                           <div className="inner_div"></div>
                         </div>
                         <div className="linetimeline"></div>
-                      </div>
+                      </div> */}
                       <Card
                         event={eventsArray[index]}
                         session={session}

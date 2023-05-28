@@ -15,7 +15,7 @@ export default function Head() {
         property="og:description"
       />
       <meta
-        content="https://res.cloudinary.com/dl53ixk7b/image/upload/v1679374737/ecellblue_xh4wbv.png"
+        // content="https://res.cloudinary.com/dl53ixk7b/image/upload/v1679374737/ecellblue_xh4wbv.png"
         property="og:image"
       />
       <meta content="E-Summit&#x27;23 by E-Cell VIT" property="twitter:title" />
@@ -24,7 +24,7 @@ export default function Head() {
         property="twitter:description"
       />
       <meta
-        content="https://res.cloudinary.com/dl53ixk7b/image/upload/v1679374737/ecellblue_xh4wbv.png"
+        // content="https://res.cloudinary.com/dl53ixk7b/image/upload/v1679374737/ecellblue_xh4wbv.png"
         property="twitter:image"
       />
       <meta property="og:type" content="website" />
