@@ -20,16 +20,14 @@ export default function Section2() {
           <img src="ecellblue.png" width="425px" className="image" />
         </div>
         <div className="about_txt_wrap">
-          <h1 className="about_h1 text-white">About E-Summit’23</h1>
+          <h1 className="about_h1 text-white">About Ignitia</h1>
           <p className="about_para text-white">
-            <strong className="bld">E-Summit</strong> is the conclave that
-            insinuates attendees to the entrepreneurial world. It is a fusion of
-            insightful sessions and visionary activities disguised as a single
-            event that opens the realm of networking and broadens your
-            perspective on business. E-Summit aims to inculcate a sense of
-            innovation in young people through its exclusive collection of
-            enlivening events, enthralling workshops, and exciting expos, and
-            the perfect panel of spectacular speakers.
+            Introducing <strong className="bld">Ignitia</strong>, a place where innovation meets collaboration. An extraordinary convergence of three 
+            dynamic workshops: Aerodynamics and Rocket-Building, DevOps, and Product Management and to top it all, a 36-hour adrenaline-fueled adventure: the 
+            Ignitia Hack, the ultimate test of skill, creativity, and endurance
+            Ignitia is a collaboration of three renowned clubs: Team Sammard, ISTE, and E-Cell. Together, they have curated an immersive program that will push 
+            the boundaries of your capabilities.
+
           </p>
           {/* <Link href="#" className="primary_btn w-button">
             Get Started{" "}
