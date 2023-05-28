@@ -34,7 +34,7 @@ export default async function Home() {
     <div className="event-sec">
       <div className="event_wrapper">
         <h1 className="event_h1">
-          Yantra
+          Ignitia Hack
           <br />
         </h1>
         <p className="event_date ">
@@ -45,14 +45,8 @@ export default async function Home() {
           <br />
         </p>
         <p className="form_para_small">
-          An overnight hackathon that provides an opportunity for participants
-          to put their problem-solving skills to test. With different tracks
-          covering various real world problems in the business hemisphere,
-          participants will be able to showcase their expertise and creativity
-          while working alongside like-minded individuals. Whether you are a
-          seasoned hacker or just starting out, "E-Hack" is a unique chance to
-          work on challenging projects and build your skills in this competitive
-          arena of entrepreneurship and technology.
+          Gear up for an adrenaline-fueled 36-hour marathon of creativity, collaboration, and innovation at the electrifying Ignitia Hack! This ultimate fusion of coding and business will push your limits and redefine what's possible for you and by you.
+          Imagine a high-octane environment where brilliant minds from diverse backgrounds converge to solve real-world challenges. With laptops humming and ideas soaring, you'll be part of a dynamic community of hackers, developers, designers, and entrepreneurs.
           <br />
         </p>
         <div className="evet_price_wrap">

@@ -34,7 +34,7 @@ export default async function Home() {
     <div className="event-sec">
       <div className="event_wrapper">
         <h1 className="event_h1">
-          Yantra
+          Product Management
           <br />
         </h1>
         <p className="event_date ">
@@ -45,14 +45,7 @@ export default async function Home() {
           <br />
         </p>
         <p className="form_para_small">
-          An overnight hackathon that provides an opportunity for participants
-          to put their problem-solving skills to test. With different tracks
-          covering various real world problems in the business hemisphere,
-          participants will be able to showcase their expertise and creativity
-          while working alongside like-minded individuals. Whether you are a
-          seasoned hacker or just starting out, "E-Hack" is a unique chance to
-          work on challenging projects and build your skills in this competitive
-          arena of entrepreneurship and technology.
+          Learn the art of identifying market needs, crafting compelling user experiences, and driving innovation. Acquire the skills to navigate the dynamic landscape of product management and make an impact in any industry through the Product Management Workshop. Ignite your passion for entrepreneurship, refine your skills and network with like-minded individuals with E-Cell, VIT.
           <br />
         </p>
         <div className="evet_price_wrap">

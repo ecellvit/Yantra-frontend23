@@ -34,7 +34,7 @@ export default async function Home() {
     <div className="event-sec">
       <div className="event_wrapper">
         <h1 className="event_h1">
-          Yantra
+          DevOps
           <br />
         </h1>
         <p className="event_date ">
@@ -45,14 +45,7 @@ export default async function Home() {
           <br />
         </p>
         <p className="form_para_small">
-          An overnight hackathon that provides an opportunity for participants
-          to put their problem-solving skills to test. With different tracks
-          covering various real world problems in the business hemisphere,
-          participants will be able to showcase their expertise and creativity
-          while working alongside like-minded individuals. Whether you are a
-          seasoned hacker or just starting out, "E-Hack" is a unique chance to
-          work on challenging projects and build your skills in this competitive
-          arena of entrepreneurship and technology.
+          For those enchanted by the realm of technology, the DevOps workshop is a haven of innovation. Immerse yourself in the fast-paced world of software development and operations, and gain insights into the latest tools and methodologies. Unleash your coding prowess through the DevOps Workshop intricately curated by ISTE, VIT.
           <br />
         </p>
         <div className="evet_price_wrap">

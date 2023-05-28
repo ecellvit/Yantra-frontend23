@@ -173,52 +173,52 @@ export default function Navbar({ session }) {
                       onClick={() => {
                         setRespHidden(true);
                       }}
-                      href="/events/yantra"
+                      href="/events/hack"
                       style={{
                         backgroundColor:
-                          pathname == "/events/yantra" && "#374151",
+                          pathname == "/events/hack" && "#374151",
                       }}
                     >
-                      Yantra
+                      Ignitia Hack
                     </Link>
                     <Link
                       className="bg-[#1C1D20] focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-slate-700 hover:text-slate-100 focus:bg-slate-700 focus:text-slate-100 focus:outline-none md:mt-0"
                       onClick={() => {
                         setRespHidden(true);
                       }}
-                      href="/events/work1"
+                      href="/events/devops"
                       style={{
                         backgroundColor:
-                          pathname == "/events/work1" && "#374151",
+                          pathname == "/events/devops" && "#374151",
                       }}
                     >
-                      Workshop 1
+                      DevOps
                     </Link>
                     <Link
                       className="bg-[#1C1D20] focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-slate-700 hover:text-slate-100 focus:bg-slate-700 focus:text-slate-100 focus:outline-none md:mt-0"
                       onClick={() => {
                         setRespHidden(true);
                       }}
-                      href="/events/work2"
+                      href="/events/product"
                       style={{
                         backgroundColor:
-                          pathname == "/events/work2" && "#374151",
+                          pathname == "/events/product" && "#374151",
                       }}
                     >
-                      Workshop 2
+                      Product Management
                     </Link>
                     <Link
                       className="bg-[#1C1D20] focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-slate-700 hover:text-slate-100 focus:bg-slate-700 focus:text-slate-100 focus:outline-none md:mt-0"
                       onClick={() => {
                         setRespHidden(true);
                       }}
-                      href="/events/work3"
+                      href="/events/rocket"
                       style={{
                         backgroundColor:
-                          pathname == "/events/work3" && "#374151",
+                          pathname == "/events/rocket" && "#374151",
                       }}
                     >
-                      Workshop 3
+                      OpenRocket
                     </Link>
                   </div>
                 </div>
@@ -263,13 +263,13 @@ export default function Navbar({ session }) {
                             onClick={() => {
                               setRespHidden(true);
                             }}
-                            href="/manage/yantra"
+                            href="/manage/hack"
                             style={{
                               backgroundColor:
-                                pathname == "/manage/yantra" && "#374151",
+                                pathname == "/manage/hack" && "#374151",
                             }}
                           >
-                            Yantra
+                            Ignitia Hack
                           </Link>
                         ) : "Not registered"}
                       </div>

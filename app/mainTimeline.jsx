@@ -41,7 +41,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
           {session ? (
             <div>
               <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3">
-                <div className="timeline-element">
+                <div className="timeline-element m-16">
                   <NewCard
                     isRegistered={userArray[0]}
                     event={eventsArray[0]}
@@ -50,7 +50,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                     userArray={userArray}
                   ></NewCard>
                 </div>{" "}
-                <div className="timeline-element">
+                <div className="timeline-element m-16">
                   <NewCard
                     isRegistered={userArray[1]}
                     event={eventsArray[1]}
@@ -59,7 +59,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                     userArray={userArray}
                   ></NewCard>
                 </div>{" "}
-                <div className="timeline-element">
+                <div className="timeline-element m-16">
                   <NewCard
                     isRegistered={userArray[2]}
                     event={eventsArray[2]}
@@ -68,15 +68,15 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                     userArray={userArray}
                   ></NewCard>
                 </div>
-              </div>
-              <div className="timeline-element">
-                <NewCard
-                  isRegistered={userArray[3]}
-                  event={eventsArray[3]}
-                  id={3}
-                  eventsArray={eventsArray}
-                  userArray={userArray}
-                ></NewCard>
+                <div className="timeline-element">
+                  <NewCard
+                    isRegistered={userArray[3]}
+                    event={eventsArray[3]}
+                    id={3}
+                    eventsArray={eventsArray}
+                    userArray={userArray}
+                  ></NewCard>
+                </div>
               </div>
             </div>
           ) : (
