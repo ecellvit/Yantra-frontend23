@@ -252,9 +252,22 @@
   .card_btn {
     @apply bg-[hsla(0,0%,66.7%,0.2)] text-base font-medium mt-[20px] px-[15px] py-[9px] rounded-[5px];
     font-family: Inter, sans-serif;
+    transition: 0.4s;
+  }
+  .card_btn:hover{
+    @apply bg-white text-black;
+    transform: scale(1.2);
+    transition: 0.4s;
+  }
+  .card_btn strong{
+    transition: 0.1s;
+  }
+  .card_btn strong:hover{
+    padding-left: 0.2rem;
+    transition: 0.1s;
   }
   .form_section {
-    @apply flex min-h-screen bg-white;
+    @apply flex min-h-screen bg-[#1c1d20] text-white;
   }
   .text_form {
     @apply flex flex-col items-center mx-auto;
@@ -264,7 +277,7 @@
   }
 
   .form_sec_l {
-    @apply w-[50vw] bg-[url("https://res.cloudinary.com/dchq25bxl/image/upload/v1679337272/template_1-min_iils6g.png")] bg-[50%_50%] bg-cover text-white pl-[20px];
+    @apply w-[50vw] bg-[url('/volcano2.svg')] bg-[50%_50%] bg-cover text-white pl-[20px];
   }
   .form_sec_r {
     @apply w-[60vw] mt-[10vh];
@@ -302,7 +315,7 @@
     @apply px-[60px];
   }
   .formbtn {
-    @apply block w-[15vw] bg-white text-black text-base leading-[20px] font-medium text-center mt-[20px] rounded-[20px] border-2 border-solid border-black;
+    @apply block w-[15vw] bg-[#1c1d20] text-base leading-[20px] font-medium text-center mt-[20px] rounded-[20px] border-2 border-solid border-black;
     font-family: Poppins, sans-serif;
   }
   .sound_sec {
@@ -840,7 +853,7 @@
   font-family: Inter, sans-serif;
 }
 .event_wrapper {
-  @apply w-[75vw] text-left mx-auto pt-0 leading-[40px];
+  @apply w-[75vw] text-left mx-auto pt-0 leading-[40px] bg-[#1C1D20] bg-opacity-80 p-10;
 }
 .form_r_h1 {
   @apply font-bold mt-5 mb-2.5 pl-[60px];
@@ -859,7 +872,7 @@
   @apply flex min-h-screen;
 }
 .event-sec {
-  @apply w-screen min-h-[95vh] bg-[url("https://res.cloudinary.com/dchq25bxl/image/upload/v1679244337/bg_f6aif4.png")] bg-[50%_50%] bg-cover text-white text-base leading-5 font-normal mt-0 mx-auto pl-0;
+  @apply w-screen min-h-[95vh]  text-white text-base leading-5 font-normal max-h-screen mt-20 mb-2 mx-auto pl-0;
   font-family: Inter, sans-serif;
 }
 .form_sec_r {

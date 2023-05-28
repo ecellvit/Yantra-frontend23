@@ -1,7 +1,7 @@
-import "../../../styles/landing.css";
-import { getServerSession } from "next-auth";
 import { authOptions } from "@/pages/api/auth/[...nextauth]";
+import { getServerSession } from "next-auth";
 import Link from "next/link";
+import "../../../styles/landing.css";
 import RegButton from "./RegButton";
 
 async function getUserData(token) {
@@ -28,33 +28,37 @@ export default async function Home() {
     const userData = await getUserData(session);
     userArray = userData?.user.registeredEvents;
   }
-  const check = session && userArray[2];
+
+  const check = session && userArray[0];
   return (
     <div className="event-sec">
       <div className="event_wrapper">
         <h1 className="event_h1">
-          Innoventure
+          Yantra
           <br />
         </h1>
-        <p className="event_date ">Date &amp; Time: 2nd April 2023, 10:00 AM</p>
+        <p className="event_date ">
+          Date &amp; Time : 31st March 2023, 9:00 PM
+        </p>
         <p className="event_para">
           Venue: Sarojini Naidu SJT
           <br />
         </p>
         <p className="form_para_small">
-          A business simulation event which gives the participants an
-          entrepreneurial ecosystem and platform to deploy their skills and
-          ideas about the aspects of product development, business analysis,
-          while inculcating knowledge about the trends in the current market and
-          economic conditions faced by business owners of all sizes everyday.
-          Innoventure is your portal to a world full of possibilities and
-          creative problem solving.
+          An overnight hackathon that provides an opportunity for participants
+          to put their problem-solving skills to test. With different tracks
+          covering various real world problems in the business hemisphere,
+          participants will be able to showcase their expertise and creativity
+          while working alongside like-minded individuals. Whether you are a
+          seasoned hacker or just starting out, "E-Hack" is a unique chance to
+          work on challenging projects and build your skills in this competitive
+          arena of entrepreneurship and technology.
           <br />
         </p>
         <div className="evet_price_wrap">
           <div className="price_wrap">
-            {/* <p className="para_med_event">1st</p> */}
-            <p className="para_bold_event">Prize Pool - Rs 30,000</p>
+            {/* <p className="para_med_event">Prize Pool</p> */}
+            <p className="para_bold_event">Prize Pool - Rs 75,000</p>
           </div>
           {/* <div className="price_wrap">
             <p className="para_med_event">2nd</p>
@@ -65,8 +69,12 @@ export default async function Home() {
             <p className="para_bold_event">Coming Soon</p>
           </div> */}
         </div>
+
         <RegButton check={check} userArray={userArray} />
       </div>
     </div>
   );
 }
+// {session && userArray[1] && <Link classNameName="eventbtn w-button" href="/manage/ehack">
+// Go to Dashboard
+// </Link>}

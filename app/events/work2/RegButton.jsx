@@ -23,7 +23,7 @@ export default function RegButton({ userArray, check }) {
 
   function handleRegister(eventCode) {
     if (!session) {
-      handleRegisterwithLogin(0);
+      handleRegisterwithLogin(1);
     }
     if (session) {
       //console.log("here");
@@ -75,57 +75,27 @@ export default function RegButton({ userArray, check }) {
     refreshData(router, path);
     return;
   }, []);
-  if (userArray) {
-    return (
-      <button
-        className="eventbtn w-button"
-        onClick={() => {
-          // //console.log(isRegistered);
-          if (userArray) {
-            //console.log(userArray);
-            if (userArray[0]) {
-              router.push("/manage/impetus");
-            } else {
-              if (userArray[2] != 1) {
-                //console.log("here");
-                return handleRegister(0);
-              }
-            }
+
+  return (
+    <button
+      className="eventbtn w-button"
+      onClick={() => {
+        // //console.log(isRegistered);
+        if (userArray) {
+          //console.log(userArray);
+          if (userArray[1]) {
+            router.push("/manage/yantra");
           } else {
             //console.log("here");
-            return handleRegister(0);
+            return handleRegister(1);
           }
-        }}
-      >
-        {userArray[2] == 1
-          ? `${check ? "Go to Dashboard" : "Register Now"}`
-          : `${check ? "Go to Dashboard" : "Register Now"}`}
-      </button>
-    );
-  } else {
-    return (
-      <button
-        className="eventbtn w-button"
-        onClick={() => {
-          // //console.log(isRegistered);
-          if (userArray) {
-            //console.log(userArray);
-            if (userArray[0]) {
-              router.push("/manage/impetus");
-            } else {
-              if (userArray[2] != 1) {
-                //console.log("here");
-                return handleRegister(0);
-              }
-            }
-          } else {
-            //console.log("here");
-            return handleRegister(0);
-          }
-        }}
-      >
-        Register Now
-      </button>
-    );
-  }
+        } else {
+          //console.log("here");
+          return handleRegister(1);
+        }
+      }}
+    >
+      {`${check ? "Go to Dashboard" : "Register Now"}`}
+    </button>
+  );
 }

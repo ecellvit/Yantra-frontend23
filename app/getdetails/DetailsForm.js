@@ -97,14 +97,14 @@ export default function DetailsForm({ accessTokenBackend }) {
       <div className="form_section">
         <div className="form_sec_l">
           <div className="form_logo">
-            <img src="logo_ecel.png" alt="logo" className="image" />
+            <img src="group.svg" alt="logo" className="image h-32  mt-10 lg:h-96 lg:mt-32" />
           </div>
           <div className="text_form">
             <h1 className="form_l_h1">
-              E-SUMMIT’23
+              IGNITIA’23
               <br />‍
             </h1>
-            <p className="form_date">30th March-2nd april</p>
+            <p className="form_date">1st June-3rd June</p>
           </div>
         </div>
         <div className="form_sec_r">
