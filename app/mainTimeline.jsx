@@ -34,8 +34,8 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
       <div className="timeline_sec">
         <div className="timeline-cont">
           <div className="timeline_header">
-            <h1 className="about_h1 text-white bg-black">Events</h1>
-            <div className="event_line"></div>
+            <h1 className="about_h1 text-white bg-black border-b-4">Events</h1>
+            {/* <div className="bg-white h-0.5"></div> */}
           </div>
 
           {session ? (
