@@ -36,6 +36,7 @@ export default async function Home() {
         <h1 className="event_h1">
           OpenRocket/Aerodynamics
           <br />
+          <br />
         </h1>
         <p className="event_date ">
           Date &amp; Time : 31st March 2023, 9:00 PM
