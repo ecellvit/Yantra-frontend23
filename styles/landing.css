@@ -142,7 +142,7 @@
     @apply block max-w-[80vw] flex-row justify-around items-center gap-x-[20px] gap-y-[20px] bg-white font-medium mb-[5vh] mx-auto;
   }
   .event_line {
-    @apply w-full h-px bg-white mt-0;
+    @apply w-full h-1 bg-white mt-0;
   }
   .date {
     @apply text-2xl font-bold  mb-[10px] text-center;

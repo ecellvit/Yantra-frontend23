@@ -10,29 +10,26 @@ export default function Footer() {
           </div>
           <div className="contact_footer">
             <img src="call.png" width="23.5" alt="" />
-            <a href="tel:+917259973282" className="contact_para">
-              +917259973282 <br></br>(Shrishail - Chairperson)
+            <a href="tel:+7057072999" className="contact_para">
+              +917057072999 <br></br>(Harshal Bhure - Event Coordinator)
             </a>
           </div>
           <div className="contact_footer">
             <img src="mail.png" width="28.5" alt="" className="image" />
-            <a href="mailto:helloecellvit@gmail.com" className="contact_para">
-              helloecellvit@gmail.com
+            <a href="ignitiaofficial2023@gmail.com" className="contact_para">
+              ignitiaofficial2023@gmail.com
             </a>
           </div>
         </div>
         <div className="mfoot">
           <div className="foot_line"></div>
           <p className="desc_footer">
-            Entrepreneurship Cell is a Student based Club functioning under
-            Office of Students&#x27; Welfare, VIT Vellore which aims at
-            fostering entrepreneurial spirit amongst young aspirants by
-            providing them with a platform and required resources for actuating
-            their ideas into successful business ventures. E-Cell strives to
-            attain an entrepreneurial environment in the campus and believes in
-            taking strides towards establishing an ever-growing, ever-improving
-            Start-Up environment. Our sole approach is to magnify the reach and
-            set up a diverse pool of investors, evaluators and mentors.
+          Introducing Ignitia, a place where innovation meets collaboration. An extraordinary convergence of three dynamic workshops: Aerodynamics and 
+          Rocket-Building, DevOps, and Product Management and to top it all, a 36-hour adrenaline-fueled adventure: the Ignitia Hack, the ultimate test of skill, 
+          creativity, and endurance
+          Ignitia is a collaboration of three renowned clubs: Team Sammard, ISTE, and E-Cell. Together, they have curated an immersive program that will push the
+          boundaries of your capabilities.
+
           </p>
           <div className="foot_line"></div>
           {/* <h1 className="develop_h1">Designed and developed by:</h1>
