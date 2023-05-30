@@ -111,8 +111,14 @@ export default function NewCard({
 
   return (
     <>
-      <div className="timeline_wrapper ml-3">
-        <div className="border-white rounded-3xl border-4 p-8">
+
+      <div class="block max-w-sm p-6 min-h-full rounded-lg shadow  bg-zinc-800 border-gray-700">
+        {/* <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Noteworthy technology acquisitions 2021</h5> */}
+        {/* <p class="font-normal text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> */}
+      {/* </div> */}
+
+      {/* <div className="timeline_wrapper ml-3"> */}
+        {/* <div className="border-white rounded-3xl border-4 p-8"> */}
           <img className={`card_cont`} src={event?.imgUrl} alt="event_image" />
           <h1 className="card_h1 text-center">{event?.title} </h1>
           <div className="flex justify-center items-center">
@@ -218,7 +224,7 @@ export default function NewCard({
           {/* <button className="btn_card_last w-button">
                           View Details<strong>→</strong>{" "}
                         </button> */}
-        </div>
+        {/* </div> */}
       </div>
     </>
   );

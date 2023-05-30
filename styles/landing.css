@@ -112,10 +112,10 @@
     @apply min-h-[40vh] bg-white;
   }
   .timeline_sec {
-    @apply min-h-screen mx-[10vw] pb-[10vh];
+    @apply min-h-screen mx-[10vw];
   }
   .timeline-cont {
-    @apply w-[80vw] min-h-[50vh] mt-[10vh] mx-auto pb-[140px];
+    @apply w-[80vw] min-h-[50vh] mt-[10vh] mx-auto pb-[70px];
   }
   .outer_div {
     @apply relative z-[1] flex w-[50px] mt-[-1px] h-[50px] flex-row justify-center flex-nowrap items-stretch bg-black rounded-[83px];

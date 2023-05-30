@@ -35,13 +35,13 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
         <div className="timeline-cont">
           <div className="timeline_header">
             <h1 className="about_h1 text-white bg-black border-b-4">Events</h1>
-            {/* <div className="bg-white h-0.5"></div> */}
+            {/* <div className="bg-slate-700 h-0.5"></div> */}
           </div>
 
           {session ? (
             <div>
-              <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3">
-                <div className="timeline-element m-16">
+              <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 sm:gap-4">
+                <div className="timeline-element my-4">
                   <NewCard
                     isRegistered={userArray[0]}
                     event={eventsArray[0]}
@@ -50,7 +50,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                     userArray={userArray}
                   ></NewCard>
                 </div>{" "}
-                <div className="timeline-element m-16">
+                <div className="timeline-element my-4">
                   <NewCard
                     isRegistered={userArray[1]}
                     event={eventsArray[1]}
@@ -59,7 +59,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                     userArray={userArray}
                   ></NewCard>
                 </div>{" "}
-                <div className="timeline-element m-16">
+                <div className="timeline-element my-4">
                   <NewCard
                     isRegistered={userArray[2]}
                     event={eventsArray[2]}
@@ -68,7 +68,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                     userArray={userArray}
                   ></NewCard>
                 </div>
-                <div className="timeline-element">
+                <div className="timeline-element my-4">
                   <NewCard
                     isRegistered={userArray[3]}
                     event={eventsArray[3]}
@@ -84,7 +84,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
               {" "}
               <>
                 <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3">
-                  <div className="timeline-element">
+                  <div className="timeline-element my-4">
                     <NewCard
                       isRegistered={0}
                       event={eventsArray[0]}
@@ -93,7 +93,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                       userArray={userArray}
                     ></NewCard>
                   </div>{" "}
-                  <div className="timeline-element">
+                  <div className="timeline-element my-4">
                     <NewCard
                       isRegistered={0}
                       event={eventsArray[1]}
@@ -102,7 +102,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                       userArray={userArray}
                     ></NewCard>
                   </div>
-                  <div className="timeline-element">
+                  <div className="timeline-element my-4">
                     <NewCard
                       isRegistered={0}
                       event={eventsArray[2]}
@@ -112,7 +112,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                     ></NewCard>
                   </div>
                 </div>
-                <div className="timeline-element">
+                <div className="timeline-element my-4">
                   <div className="rod">
                     <div className="outer_div">
                       <div className="inner_div"></div>
@@ -141,7 +141,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
           {eventsArray.map((event, id) => {
             return (
               <>
-                <div className="timeline-element" key={id}>
+                <div className="timeline-element my-4" key={id}>
                   <div className="rod">
                     <div className="outer_div">
                       <img src="gola.svg" className="image"></img>
