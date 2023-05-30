@@ -25,7 +25,7 @@ async function getUserData(session) {
 }
 
 export default async function UserSent() {
-  const eventName = "hack";
+  const eventName = "yantra";
   const session = await getServerSession(authOptions);
   const data = await getUserData(session);
   //console.log("!!!!!!!@22221!!!!!",data.user);

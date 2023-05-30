@@ -64,7 +64,7 @@ export default function LeaderDashboard({ userData, eventName, session }) {
             <button
               onClick={(e) => {
                 eventName = eventName.toLowerCase();
-                router.push(`/manage/${eventName}/add-members`);
+                router.push(`/manage/hack/add-members`);
               }}
               className="bg-white w-40 rounded-md p-2"
             >
@@ -111,7 +111,7 @@ export default function LeaderDashboard({ userData, eventName, session }) {
             <button
               onClick={(e) => {
                 eventName = eventName.toLowerCase();
-                router.push(`/manage/${eventName}/add-members`);
+                router.push(`/manage/hack/add-members`);
               }}
               className="navigation_card_btn w-button"
             >
@@ -124,7 +124,7 @@ export default function LeaderDashboard({ userData, eventName, session }) {
             className="navigation_card_btn w-button"
             onClick={(e) => {
               eventName = eventName.toLowerCase();
-              router.push(`/manage/${eventName}/add-members`);
+              router.push(`/manage/hack/add-members`);
             }}
           >
             {" "}

@@ -120,7 +120,7 @@ export default function CreateTeam({ session, eventName }) {
         <h1 className="join_h1 mt-10">Join a Team</h1>
         <button
           onClick={(e) => {
-            router.push(`/manage/${eventName}/join-teams`);
+            router.push(`/manage/hack/join-teams`);
           }}
           className="handleteam w-button "
         >
@@ -170,7 +170,7 @@ export default function CreateTeam({ session, eventName }) {
             <div className="text-3xl text-black mt-4">Join a Team</div>
             <button
               onClick={(e) => {
-                router.push(`/manage/${eventName}/join-teams`);
+                router.push(`/manage/hack/join-teams`);
               }}
               type="button"
               className="mt-4 text-black bg-[#53B3B9] hover:text-black hover:bg-[#43A3A9] focus:ring-4 focus:outline-none dark:focus:ring-blue-800 w-2/3 font-medium rounded-lg text-md px-5 py-2.5 text-center mr-2 mb-2"

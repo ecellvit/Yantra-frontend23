@@ -13,7 +13,7 @@ function LeaderNav({ eventName }) {
           <div className="left_sub ml-[-1.2rem] md:ml-[6rem]  lg:ml-[-3.4rem]">
             <button
               onClick={() => {
-                router.push(`/manage/${eventName}`);
+                router.push(`/manage/hack`);
               }}
               className="managebtn w-button text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700"
             >
@@ -21,13 +21,13 @@ function LeaderNav({ eventName }) {
             </button>
             <h1 className="subnav_h1">
               {" "}
-              {eventName === "yantra" ? "Yantra" : eventName.toUpperCase()}
+              {eventName === "yantra" ? "Ignitia Hack" : eventName.toUpperCase()}
             </h1>
           </div>
           <div className="right_subnav">
             <button
               className="send w-button text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 "
-              onClick={(e) => router.push(`/manage/${eventName}/leader-sent`)}
+              onClick={(e) => router.push(`/manage/hack/leader-sent`)}
             >
               Sent
             </button>
@@ -35,7 +35,7 @@ function LeaderNav({ eventName }) {
               button
               className="recieved w-button  mr-[1.5rem] "
               onClick={(e) =>
-                router.push(`/manage/${eventName}/received-join-request`)
+                router.push(`/manage/hack/received-join-request`)
               }
             >
               Received
@@ -54,7 +54,7 @@ function LeaderNav({ eventName }) {
                 {
                   <button
                     onClick={() => {
-                      router.push(`/manage/${eventName}`);
+                      router.push(`/manage/hack`);
                     }}
                     className="flex bg-[#53B3B9] items-center rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
                   >
@@ -70,7 +70,7 @@ function LeaderNav({ eventName }) {
                   <div>
                     <button
                       onClick={(e) =>
-                        router.push(`/manage/${eventName}/leader-sent`)
+                        router.push(`/manage/hack/leader-sent`)
                       }
                       data-te-ripple-init
                       data-te-ripple-color="light"
@@ -98,7 +98,7 @@ function LeaderNav({ eventName }) {
                     <button
                       onClick={(e) =>
                         router.push(
-                          `/manage/${eventName}/received-join-request`
+                          `/manage/hack/received-join-request`
                         )
                       }
                       data-te-ripple-init

@@ -77,7 +77,7 @@ function UserReceivedReqCard({ request, eventName, session }) {
           return;
         }
         toast("Invite Accepted Successfully");
-        router.push(`/manage/${eventName}`);
+        router.push(`/manage/hack`);
       });
   }
   return (

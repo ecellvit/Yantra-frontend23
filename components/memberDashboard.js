@@ -88,7 +88,7 @@ export default function MemberDashboard({ userData, eventName, session }) {
             className="navigation_card_btn w-button"
             onClick={(e) => {
               eventName = eventName.toLowerCase();
-              router.push(`/manage/${eventName}/add-members`);
+              router.push(`/manage/hack/add-members`);
             }}
           >
             {" "}
