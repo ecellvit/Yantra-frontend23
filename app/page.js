@@ -48,6 +48,9 @@ export default async function Home() {
   const session = await getSession();
   const userData = await getUserData(session);
   const userArray = userData?.user?.registeredEvents;
+  const hasTeam = userData?.user?.yantraTeamId;
+
+  console.log(hasTeam);
 
   if (userData === "error") {
     return <NotLoggedIn />;
@@ -63,6 +66,7 @@ export default async function Home() {
       <Maintimeline
         eventsArray={eventsArray}
         userArray={userArray}
+        hasTeam={hasTeam}
         session={session}
       />
 

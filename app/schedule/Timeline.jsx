@@ -29,7 +29,7 @@ export default function Timeline({ userArray, eventsArray, session }) {
             </div>
             {userArray.map((registered, index) => {
               console.log(eventsArray)            
-              if (registered === 1) {
+              if (registered === 1 && index!==0) {
                 
                 return (
                   <>
@@ -60,7 +60,7 @@ export default function Timeline({ userArray, eventsArray, session }) {
     );
   } else {
     return (
-      <div className="flex justify-center mt-10">Please register something</div>
+      <div className="flex text-white justify-center mt-10">Please register something</div>
 );
 }
 }

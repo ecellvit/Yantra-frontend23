@@ -173,13 +173,13 @@ export default function Navbar({ session }) {
                       onClick={() => {
                         setRespHidden(true);
                       }}
-                      href="/events/yantra"
+                      href="/events/hack"
                       style={{
                         backgroundColor:
-                          pathname == "/events/yantra" && "#374151",
+                          pathname == "/events/hack" && "#374151",
                       }}
                     >
-                      Yantra
+                      The Ignitia Hack
                     </Link>
                     <Link
                       className="bg-[#1C1D20] focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-slate-700 hover:text-slate-100 focus:bg-slate-700 focus:text-slate-100 focus:outline-none md:mt-0"
@@ -199,13 +199,13 @@ export default function Navbar({ session }) {
                       onClick={() => {
                         setRespHidden(true);
                       }}
-                      href="/events/product"
+                      href="/events/nexus"
                       style={{
                         backgroundColor:
-                          pathname == "/events/product" && "#374151",
+                          pathname == "/events/nexus" && "#374151",
                       }}
                     >
-                      Product Management
+                      Nexus
                     </Link>
                     <Link
                       className="bg-[#1C1D20] focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-slate-700 hover:text-slate-100 focus:bg-slate-700 focus:text-slate-100 focus:outline-none md:mt-0"
@@ -263,13 +263,13 @@ export default function Navbar({ session }) {
                             onClick={() => {
                               setRespHidden(true);
                             }}
-                            href="/manage/yantra"
+                            href="/manage/hack"
                             style={{
                               backgroundColor:
-                                pathname == "/manage/yantra" && "#374151",
+                                pathname == "/manage/hack" && "#374151",
                             }}
                           >
-                            yantra
+                            The Ignitia Hack
                           </Link>
                         ) : "Not registered"}
                       </div>

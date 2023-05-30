@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import refreshData from "@/app/utils/refresh";
 import "../styles/landing.css";
 export default function CreateTeam({ session, eventName }) {
-  eventName = eventName.toLowerCase();
+  eventName = eventName
   const teamName = useRef("");
   const [emailIds, setEmailIds] = useState([]);
   const router = useRouter();

@@ -25,12 +25,12 @@ async function getUserData(session) {
 }
 
 export default async function UserSent() {
-  const eventName = "yantra";
+  const eventName = "hack";
   const session = await getServerSession(authOptions);
   const data = await getUserData(session);
   //console.log("!!!!!!!@22221!!!!!",data.user);
-  const userData = data.user[eventName + "TeamId"];
-  const userRole = data.user[eventName + "TeamRole"];
+  const userData = data.user["yantra" + "TeamId"];
+  const userRole = data.user["yantra" + "TeamRole"];
 
   //console.log("userData ran", userData);
   let hasTeam = false;

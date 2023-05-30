@@ -34,7 +34,7 @@ export default async function Home() {
     <div className="event-sec">
       <div className="event_wrapper">
         <h1 className="event_h1">
-          Product Management
+          Nexus
           <br />
         </h1>
         <p className="event_date ">

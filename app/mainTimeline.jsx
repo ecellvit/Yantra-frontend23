@@ -14,7 +14,7 @@ const eventCodes = [
   "EVENT_6",
 ];
 
-export default function Maintimeline({ userArray, eventsArray, session }) {
+export default function Maintimeline({ userArray, eventsArray, session, hasTeam }) {
   //console.log("Events array",eventsArray);
   //console.log("User array",userArray);
   return (
@@ -47,6 +47,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                     event={eventsArray[0]}
                     id={0}
                     eventsArray={eventsArray}
+                    hasTeam={hasTeam}
                     userArray={userArray}
                   ></NewCard>
                 </div>{" "}
@@ -56,6 +57,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                     event={eventsArray[1]}
                     id={1}
                     eventsArray={eventsArray}
+                    hasTeam={hasTeam}
                     userArray={userArray}
                   ></NewCard>
                 </div>{" "}
@@ -65,6 +67,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                     event={eventsArray[2]}
                     id={2}
                     eventsArray={eventsArray}
+                    hasTeam={hasTeam}
                     userArray={userArray}
                   ></NewCard>
                 </div>
@@ -74,6 +77,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                     event={eventsArray[3]}
                     id={3}
                     eventsArray={eventsArray}
+                    hasTeam={hasTeam}
                     userArray={userArray}
                   ></NewCard>
                 </div>
@@ -90,6 +94,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                       event={eventsArray[0]}
                       id={0}
                       eventsArray={eventsArray}
+                        hasTeam={hasTeam}
                       userArray={userArray}
                     ></NewCard>
                   </div>{" "}
@@ -99,6 +104,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                       event={eventsArray[1]}
                       id={1}
                       eventsArray={eventsArray}
+                        hasTeam={hasTeam}
                       userArray={userArray}
                     ></NewCard>
                   </div>
@@ -108,6 +114,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                       event={eventsArray[2]}
                       id={2}
                       eventsArray={eventsArray}
+                        hasTeam={hasTeam}
                       userArray={userArray}
                     ></NewCard>
                   </div>
@@ -117,6 +124,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                       event={eventsArray[3]}
                       id={3}
                       eventsArray={eventsArray}
+                        hasTeam={hasTeam}
                       userArray={userArray}
                     ></NewCard>
                   </div>{" "}

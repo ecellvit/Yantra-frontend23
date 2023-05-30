@@ -12,6 +12,7 @@ export default function NewCard({
   isRegistered,
   userArray,
   eventsArray,
+  hasTeam,
 }) {
   const path = usePathname();
   const router = useRouter();
@@ -69,7 +70,7 @@ export default function NewCard({
   }
 
   useEffect(() => {
-    console.log(localStorage.getItem("eventId"));
+    // console.log(localStorage.getItem("eventId"));
     if (localStorage.getItem("eventId")) {
       console.log(session);
       console.log(localStorage.getItem("eventId"));
@@ -115,113 +116,105 @@ export default function NewCard({
       <div class="block max-w-sm p-6 min-h-full rounded-lg shadow  bg-zinc-700 bg-opacity-60">
         {/* <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Noteworthy technology acquisitions 2021</h5> */}
         {/* <p class="font-normal text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> */}
-      {/* </div> */}
+        {/* </div> */}
 
-      {/* <div className="timeline_wrapper ml-3"> */}
+        {/* <div className="timeline_wrapper ml-3"> */}
         {/* <div className="border-white rounded-3xl border-4 p-8"> */}
-          <img className={`card_cont`} src={event?.imgUrl} alt="event_image" />
-          <h1 className="card_h1 text-center">{event?.title} </h1>
-          <div className="flex justify-center items-center">
-            <p className="card_para">{event?.description}</p>
-          </div>
-          <h1 className="date text-white">{event?.date}</h1>
-          <div className="card_time flex justify-center items-center">
-            <div>
-              <div className="card_l">
-                <img src="clock.svg" alt="" className="svg_card" />
-                <p className="timepara text-white">{event?.time} hours</p>
-              </div>
-              <div className="card_r">
-                <img src="location.svg" alt="" className="svg_card" />
-                <p className="timepara text-white">{event?.location}</p>
-              </div>
+        <img className={`card_cont`} src={event?.imgUrl} alt="event_image" />
+        <h1 className="card_h1 text-center">{event?.title} </h1>
+        <div className="flex justify-center items-center">
+          <p className="card_para">{event?.description}</p>
+        </div>
+        <h1 className="date text-white">{event?.date}</h1>
+        <div className="card_time flex justify-center items-center">
+          <div>
+            <div className="card_l">
+              <img src="clock.svg" alt="" className="svg_card" />
+              <p className="timepara text-white">{event?.time} hours</p>
+            </div>
+            <div className="card_r">
+              <img src="location.svg" alt="" className="svg_card" />
+              <p className="timepara text-white">{event?.location}</p>
             </div>
           </div>
-          <div className="flex justify-center items-center">
-            <button
-              className="card_btn w-button"
-              onClick={() => {
-                // console.log(isRegistered);
-                // if (event === eventsArray[4]) {
-                //   return;
-                // }
-
-                // if (id === 0 && userArray !== undefined && userArray[2] === 1) {
-                //   return;
-                // }
-                // if (id === 2 && userArray !== undefined && userArray[0] === 1) {
-                //   return;
-                // }
+        </div>
+        <div className="flex justify-center items-center">
+          <button
+            className="card_btn w-button"
+            onClick={() => {
+              // console.log(isRegistered);
+              // if (event === eventsArray[4]) {
+              //   return;
+              // }
+              // if (id === 0 && userArray !== undefined && userArray[2] === 1) {
+              //   return;
+              // }
+              // if (id === 2 && userArray !== undefined && userArray[0] === 1) {
+              //   return;
+              // }
+              if (id === 0) {
+                console.log("fdsa")
+                router.push("/manage/hack");
+              } else {
                 if (isRegistered === 0) {
                   return handleRegister(id);
+                } else {
+                  router.push("/schedule");
                 }
-                router.push("/schedule");
-              }}
-            >
-              {!session ? (
-                // (event === eventsArray[4]) ? <>Maximum Capacity Reached</> : <>Register event</>
-                <>Register event</>
-              ) : event != eventsArray[4] ? (
-                id === 0 ? (
+              }
+            }}
+          >
+            {!session ? (
+              // (event === eventsArray[4]) ? <>Maximum Capacity Reached</> : <>Register event</>
+              <>Register event</>
+            ) : event != eventsArray[4] ? (
+              id === 0 ? (
+                hasTeam ? <>Manage Team<strong>→</strong></> :
                   <>
-                    {isRegistered === 0 ? (
-                      userArray[2] != 1 ? (
-                        <>
-                          Register<strong>→</strong>{" "}
-                        </>
-                      ) : (
-                        <>
-                          Register<strong>→</strong>{" "}
-                        </>
-                      )
-                    ) : (
-                      <>
-                        Go to schedule<strong>→</strong>{" "}
-                      </>
-                    )}
+                    Register<strong>→</strong>
                   </>
-                ) : id === 2 ? (
-                  <>
-                    {isRegistered === 0 ? (
-                      userArray[0] != 1 ? (
-                        <>
-                          Register<strong>→</strong>{" "}
-                        </>
-                      ) : (
-                        <>
-                          Register<strong>→</strong>{" "}
-                        </>
-                      )
-                    ) : (
-                      <>
-                        Go to schedule<strong>→</strong>{" "}
-                      </>
-                    )}
-                  </>
-                ) : (
-                  <>
-                    {isRegistered === 0 ? (
+              ) : id === 2 ? (
+                <>
+                  {isRegistered === 0 ? (
+                    userArray[0] != 1 ? (
                       <>
                         Register<strong>→</strong>{" "}
                       </>
                     ) : (
                       <>
-                        Go to schedule<strong>→</strong>{" "}
+                        Register<strong>→</strong>{" "}
                       </>
-                    )}
-                  </>
-                  // )) : (<>Maximum Capacity Reached</>)}
-                )
+                    )
+                  ) : (
+                    <>
+                      Go to schedule<strong>→</strong>{" "}
+                    </>
+                  )}
+                </>
               ) : (
                 <>
-                  {" "}
-                  Go to schedule<strong>→</strong>{" "}
+                  {isRegistered === 0 ? (
+                    <>
+                      Register<strong>→</strong>{" "}
+                    </>
+                  ) : (
+                    <>
+                      Go to schedule<strong>→</strong>{" "}
+                    </>
+                  )}
                 </>
-              )}
-              {/* <strong>→</strong>{" "} */}
-            </button>
-          </div>
-          {/* <button className="btn_card_last w-button">
+                // )) : (<>Maximum Capacity Reached</>)}
+              )
+            ) : (
+              <>
+                {" "}
+                Go to schedule<strong>→</strong>{" "}
+              </>
+            )}
+            {/* <strong>→</strong>{" "} */}
+          </button>
+        </div>
+        {/* <button className="btn_card_last w-button">
                           View Details<strong>→</strong>{" "}
                         </button> */}
         {/* </div> */}
