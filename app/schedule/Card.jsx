@@ -17,16 +17,14 @@ export default function Card({
   const path = usePathname();
 
   let whatsappLink;
-  if (event.title === "Innoventure") {
-    whatsappLink = "https://chat.whatsapp.com/GMzHaKmhcvA9TPLWrlpG4Z";
-  } else if (event.title === "Impetus") {
-    whatsappLink = "https://chat.whatsapp.com/KZAspzBzz6vG49ZPIwWt2w";
-  } else if (event.title === "E-Talk") {
-    whatsappLink = "https://chat.whatsapp.com/Gzlla7Uc89HK5f8n4cybXr";
-  } else if (event.title === "E-Hack") {
-    whatsappLink = "https://chat.whatsapp.com/FIybjLHMJiPK7KSgjTTl8Y";
-  } else if (event.title === "Trading Workshop") {
-    whatsappLink = "https://chat.whatsapp.com/KLM4P8UksZy7ZuIjjb8HCF";
+  if (event.title === "The Ignitia Hack") {
+    whatsappLink = "https://chat.whatsapp.com/J5jN5qH3QmULX1FGTRlqcR";
+  } else if (event.title === "T-10") {
+    whatsappLink = "https://chat.whatsapp.com/DqLGTQZXgL9J4OkB0445mu";
+  } else if (event.title === "DevOps") {
+    whatsappLink = "https://chat.whatsapp.com/Dviy55N8RLz75lsWcmwgWe";
+  } else if (event.title === "Nexus") {
+    whatsappLink = "https://chat.whatsapp.com/Iatg4feZE5H0qR0TetvgS2";
   } else {
     whatsappLink = "";
   }
