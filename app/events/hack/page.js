@@ -23,10 +23,12 @@ async function getUserData(token) {
 
 export default async function Home() {
   const session = await getServerSession(authOptions);
+  let hasTeam;
   let userArray;
   if (session) {
     const userData = await getUserData(session);
     userArray = userData?.user.registeredEvents;
+    hasTeam = userData?.user?.yantraTeamId;
   }
 
   const check = session && userArray[0];
@@ -63,7 +65,7 @@ export default async function Home() {
           </div> */}
         </div>
 
-        <RegButton check={check} userArray={userArray} />
+        <RegButton check={check} userArray={userArray} hasTeam={hasTeam} />
       </div>
     </div>
   );

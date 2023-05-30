@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import refreshData from "@/app/utils/refresh";
 import "../../../styles/landing.css";
 
-export default function RegButton({ userArray, check }) {
+export default function RegButton({ userArray, check, hasTeam }) {
   const path = usePathname();
   const router = useRouter();
   const { data: session, status } = useSession();
@@ -80,22 +80,23 @@ export default function RegButton({ userArray, check }) {
     <button
       className="eventbtn w-button"
       onClick={() => {
-        // //console.log(isRegistered);
-        if (userArray) {
-          //console.log(userArray);
-          if (userArray[1]) {
-            router.push("/manage/yantra");
-          } else {
-            //console.log("here");
-            return handleRegister(1);
-          }
-        } else {
-          //console.log("here");
-          return handleRegister(1);
-        }
+        router.push("/manage/hack");
+        // console.log(isRegistered);
+        // if (userArray) {
+        //   //console.log(userArray);
+        //   if (userArray[0]) {
+        //     router.push("/manage/hack");
+        //   } else {
+        //     //console.log("here");
+        //     return handleRegister(0);
+        //   }
+        // } else {
+        //   //console.log("here");
+        //   return handleRegister(0);
+        // }
       }}
     >
-      {`${check ? "Go to Dashboard" : "Register Now"}`}
+      {`${hasTeam ? "Manage Team" : "Register Now"}`}
     </button>
   );
 }
