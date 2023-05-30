@@ -173,13 +173,13 @@ export default function Navbar({ session }) {
                       onClick={() => {
                         setRespHidden(true);
                       }}
-                      href="/events/hack"
+                      href="/events/yantra"
                       style={{
                         backgroundColor:
-                          pathname == "/events/hack" && "#374151",
+                          pathname == "/events/yantra" && "#374151",
                       }}
                     >
-                      Ignitia Hack
+                      Yantra
                     </Link>
                     <Link
                       className="bg-[#1C1D20] focus:shadow-outline mt-2 block rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:bg-slate-700 hover:text-slate-100 focus:bg-slate-700 focus:text-slate-100 focus:outline-none md:mt-0"
@@ -266,10 +266,10 @@ export default function Navbar({ session }) {
                             href="/manage/hack"
                             style={{
                               backgroundColor:
-                                pathname == "/manage/hack" && "#374151",
+                                pathname == "/manage/yantra" && "#374151",
                             }}
                           >
-                            Ignitia Hack
+                            yantra
                           </Link>
                         ) : "Not registered"}
                       </div>
