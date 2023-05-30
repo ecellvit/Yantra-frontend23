@@ -83,7 +83,7 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
             <>
               {" "}
               <>
-                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3">
+              <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 sm:gap-4">
                   <div className="timeline-element my-4">
                     <NewCard
                       isRegistered={0}
@@ -113,12 +113,6 @@ export default function Maintimeline({ userArray, eventsArray, session }) {
                   </div>
                 </div>
                 <div className="timeline-element my-4">
-                  <div className="rod">
-                    <div className="outer_div">
-                      <div className="inner_div"></div>
-                    </div>
-                    <div className="linetimeline"></div>
-                  </div>
                   <NewCard
                     isRegistered={0}
                     event={eventsArray[3]}
