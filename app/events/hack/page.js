@@ -45,8 +45,7 @@ export default async function Home() {
           <br />
         </p>
         <p className="form_para_small">
-          Gear up for an adrenaline-fueled 36-hour marathon of creativity, collaboration, and innovation at the electrifying Ignitia Hack! This ultimate fusion of coding and business will push your limits and redefine what's possible for you and by you.
-          Imagine a high-octane environment where brilliant minds from diverse backgrounds converge to solve real-world challenges. With laptops humming and ideas soaring, you'll be part of a dynamic community of hackers, developers, designers, and entrepreneurs.
+          {"Gear up for an adrenaline-fueled 36-hour marathon of creativity, collaboration, and innovation at the electrifying Ignitia Hack! This ultimate fusion of coding and business will push your limits and redefine what's possible for you and by you. Imagine a high-octane environment where brilliant minds from diverse backgrounds converge to solve real-world challenges. With laptops humming and ideas soaring, you'll be part of a dynamic community of hackers, developers, designers, and entrepreneurs."}
           <br />
         </p>
         <div className="evet_price_wrap">

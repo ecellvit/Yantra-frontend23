@@ -212,13 +212,13 @@ export default function Navbar({ session }) {
                       onClick={() => {
                         setRespHidden(true);
                       }}
-                      href="/events/rocket"
+                      href="/events/t10"
                       style={{
                         backgroundColor:
-                          pathname == "/events/rocket" && "#374151",
+                          pathname == "/events/t10" && "#374151",
                       }}
                     >
-                      OpenRocket
+                      T-10
                     </Link>
                   </div>
                 </div>
