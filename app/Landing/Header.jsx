@@ -17,18 +17,16 @@ export default function Header() {
           Shatter Limits, Forge Solutions and Spark Transformation
         </p> */}
         <div className="innovate_sec ">
-          <div className="bg-slate-800 bg-opacity-50 rounded-lg">
+          <div className="bg-slate-800 bg-opacity-50 rounded-lg mb-3">
             <div className="innovate_wrapper text-white">
               <div className="features">
                 <div className="feat_img">
                   <img src="21.svg.svg" alt="" className="feature_img" />
                 </div>
                 <div className="feat_text">
-                  <p className="feat_h1">Innovate</p>
+                  <p className="feat_h1">Empower</p>
                   <p className="feat_para text-white">
-                    Finding innovative solutions to complex real world problems
-                    to create an edge over your competitors while providing a
-                    viable alternative.
+                    Ignitia aims to empower individuals by providing them with knowledge, skills, and opportunities to succeed in their respective fields.
                   </p>
                 </div>
               </div>
@@ -37,10 +35,9 @@ export default function Header() {
                   <img src="div.svg" alt="" className="feature_img" />
                 </div>
                 <div className="feat_text">
-                  <p className="feat_h1">Ideate</p>
+                  <p className="feat_h1">Transform</p>
                   <p className="feat_para">
-                    Generate and brainstorm creative ideas to solve a problem
-                    and achieve goals through the way.
+                    Ignitia is dedicated to transforming the way we think, create, and innovate by fostering a collaborative and dynamic environment.
                   </p>
                 </div>
               </div>
@@ -49,11 +46,9 @@ export default function Header() {
                   <img src="toggle.svg" alt="" className="feature_img" />
                 </div>
                 <div className="feat_text">
-                  <p className="feat_h1">Actuate</p>
+                  <p className="feat_h1">Inspire</p>
                   <p className="feat_para">
-                    Execute a well-planned strategy with precision and agility,
-                    to produce tangible results while achieving desirable
-                    outcomes.
+                    Ignitia strives to inspire participants to reach new heights, embrace their creativity, and make a positive impact in their communities and industries.
                   </p>
                 </div>
               </div>

@@ -6,7 +6,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 
-export default function Timeline({ userArray, eventsArray, session }) {
+export default function Timeline({ userArray, eventsArray, session, hasTeam }) {
   const eventCodes = [
     "IMPETUS",
     "yantra",
@@ -16,7 +16,7 @@ export default function Timeline({ userArray, eventsArray, session }) {
     "EVENT_6",
   ];
 
-  // //console.log(eventsArray);
+  console.log(hasTeam);
   if (userArray.includes(1)) {
     return (
       <>
@@ -28,9 +28,32 @@ export default function Timeline({ userArray, eventsArray, session }) {
               {/* <div className="event_line"></div> */}
             </div>
             {userArray.map((registered, index) => {
-              console.log(eventsArray)            
-              if (registered === 1 && index!==0) {
-                
+              console.log(eventsArray)
+              if (index === 0) {
+                if (hasTeam !== null) {
+                  return (
+                    <>
+                      <div className="timeline-element" key={index}>
+                        {/* <div className="rod">
+                        <div className="outer_div">
+                          <div className="inner_div"></div>
+                        </div>
+                        <div className="linetimeline"></div>
+                      </div> */}
+                        <Card
+                          event={eventsArray[index]}
+                          session={session}
+                          tit={eventCodes[index]}
+                          id={index}
+                          // setUserArray={setUserArray}
+                          userArray={userArray}
+                        />
+                        {/* new timelin             */}
+                      </div>
+                    </>
+                  );
+                }
+              } else if (registered === 1) {
                 return (
                   <>
                     <div className="timeline-element" key={index}>
@@ -61,6 +84,6 @@ export default function Timeline({ userArray, eventsArray, session }) {
   } else {
     return (
       <div className="flex text-white justify-center mt-10">Please register something</div>
-);
-}
+    );
+  }
 }

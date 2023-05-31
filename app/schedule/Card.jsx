@@ -95,18 +95,21 @@ export default function Card({
               <p className="timepara">{event.location}</p>
             </div>
           </div>
-          <button
-            className="card_btn w-button"
-            onClick={(e) => handleDeRegister(id)}
-          >
-            <>De-Register event</>
-            <strong>→</strong>{" "}
-          </button>
+
+          {
+            id !== 0 &&
+            <button
+              className="card_btn w-button"
+              onClick={(e) => handleDeRegister(id)}
+            >
+              <>De-Register event</>
+              <strong>→</strong>{" "}
+            </button>
+          }
 
           <button
-            className={`btn_card_last w-button ${
-              event.title !== "Yantra" && "hidden"
-            }`}
+            className={`btn_card_last w-button ${event.title !== "Yantra" && "hidden"
+              }`}
             onClick={(e) =>
               !session
                 ? handleRegisterwithLogin(e, id)
@@ -117,6 +120,6 @@ export default function Card({
           </button>
         </div>
       </div>
-</>
-);
+    </>
+  );
 }

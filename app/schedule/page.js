@@ -40,13 +40,14 @@ export default async function Home() {
   const eventsArray = eventData.events;
   const userData = await getUserData(session);
   console.log(userData);
-  const userArray = userData?.user.registeredEvents;
-
-  console.log(userArray);
-  console.log(eventsArray);
+  const userArray = userData?.user?.registeredEvents;
+  const hasTeam = userData?.user?.yantraTeamId;
+  console.log(hasTeam);
+  // console.log(userArray);
   return (
     <>
       <Timeline
+        hasTeam={hasTeam}
         userArray={userArray}
         eventsArray={eventsArray}
         session={session}
