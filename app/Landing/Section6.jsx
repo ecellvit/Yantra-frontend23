@@ -16,14 +16,14 @@ export default function Section6() {
     <div className="sound_sec">
       <div className="sound_section">
         <div className="sound_r">
-          <h1 className="about_h1 sound text-white">Sounds Awesome?</h1>
+          <h1 className="about_h1 sound text-white">Tracks Have been Released!</h1>
           <button
             onClick={() => {
-              session.data ? router.push("/schedule") : loginHandler();
+              session.data ? router.push("/manage/hack") : loginHandler();
             }}
             className="primary_btn w-button"
           >
-            {session.data ? "View Registered Events" : "Get Started"}
+            {session.data ? "Sbmit your Idea" : "Get Started"}
           </button>
         </div>
       </div>
