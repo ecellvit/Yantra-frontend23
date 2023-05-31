@@ -12,7 +12,7 @@ export default function RoundZero({ accessTokenBackend }) {
   const [upFile, setUpFile] = useState(null);
   const [progress, setProgress] = useState(null);
   const [done, setDone] = useState();
-  const [video, setVideo] = useState();
+  const [video, setVideo] = useState("asdf");
   const [name, setName] = useState();
   const [git, setGit] = useState();
   const [stack, setStack] = useState();
@@ -96,12 +96,10 @@ export default function RoundZero({ accessTokenBackend }) {
           "Access-Control-Allow-Origin": "*",
         },
         body: JSON.stringify({
-          desc: gith.value,
-          fileUrl: file.value,
-          fileId: "",
-          youtubeUrl: video.value,
+          githubLink: gith.value,
+          fileLink: file.value,
+          videoLink: "asdf",
           projectName: name.value,
-          techStack: [],
         }),
         cache: "no-store",
       })
