@@ -186,56 +186,56 @@ export default function RoundZero({ accessTokenBackend }) {
         ></textarea>
       </div> */}
 
-        <div id="nameDiv" class="mb-6">
-          <label for="nameL" class="block mb-2 text-sm font-medium text-white">
+        <div id="nameDiv" className="mb-6">
+          <label for="nameL" className="block mb-2 text-sm font-medium text-white">
             Name of your Project
           </label>
           <input
             id="name"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
             required
             value={name}
           ></input>
         </div>
 
-        <div id="videoDiv" class="mb-6">
-          <label for="videoL" class="block mb-2 text-sm font-medium text-white">
+        <div id="videoDiv" className="mb-6">
+          <label for="videoL" className="block mb-2 text-sm font-medium text-white">
             Link to your Video Presentation (Optional)
           </label>
           <input
             id="video"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
             placeholder="https://www.youtube.com/"
             required
             value={video}
           ></input>
         </div>
 
-        <div id="githubDiv" class="mb-6">
+        <div id="githubDiv" className="mb-6">
           <label
             for="githubL"
-            class="block mb-2 text-sm font-medium text-white"
+            className="block mb-2 text-sm font-medium text-white"
           >
             Link to the projects GitHub organization (please make one with and
             put all your projects code in it)
           </label>
           <input
             id="github"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
             placeholder="https://github.com/"
             required
             value={git}
           ></input>
         </div>
 
-        <div id="fileDiv" class="mb-6">
-          <label for="fileL" class="block mb-2 text-sm font-medium text-white">
+        <div id="fileDiv" className="mb-6">
+          <label for="fileL" className="block mb-2 text-sm font-medium text-white">
             Link to your presentation (Please upload your presentation and
             provide the link)
           </label>
           <input
             id="file"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
             placeholder="https://github.com/"
             required
             value={upFile}
@@ -243,37 +243,37 @@ export default function RoundZero({ accessTokenBackend }) {
         </div>
 
         {/* <div id="tech">
-        <div class="row col-5">
-          <h4 class="fw-bold text-center mt-3"></h4>
-          <form class="px-4" action="">
-            <p class="fw-bold text-white">Tech Stack <br/> Choose all the technologies you will be implementing</p>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-              <label class="form-check-label text-white px-2" for="flexCheckDefault">
+        <div className="row col-5">
+          <h4 className="fw-bold text-center mt-3"></h4>
+          <form className="px-4" action="">
+            <p className="fw-bold text-white">Tech Stack <br/> Choose all the technologies you will be implementing</p>
+            <div className="form-check">
+              <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              <label className="form-check-label text-white px-2" for="flexCheckDefault">
                 Web App
               </label>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-              <label class="form-check-label text-white px-2" for="flexCheckDefault">
+            <div className="form-check">
+              <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              <label className="form-check-label text-white px-2" for="flexCheckDefault">
                 Mobile App
               </label>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" />
-              <label class="form-check-label text-white px-2" for="flexCheckDefault2">
+            <div className="form-check">
+              <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault2" />
+              <label className="form-check-label text-white px-2" for="flexCheckDefault2">
                 ML/AI
               </label>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" />
-              <label class="form-check-label text-white px-2" for="flexCheckDefault3">
+            <div className="form-check">
+              <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault3" />
+              <label className="form-check-label text-white px-2" for="flexCheckDefault3">
                 Web3/Blockchain
               </label>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" />
-              <label class="form-check-label text-white px-2" for="flexCheckDefault3">
+            <div className="form-check">
+              <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault3" />
+              <label className="form-check-label text-white px-2" for="flexCheckDefault3">
                 IoT/Hardware
               </label>
             </div>
@@ -424,91 +424,91 @@ export default function RoundZero({ accessTokenBackend }) {
             ></textarea>
           </div> */}
 
-        <div id="nameDiv" class="mb-6">
-          <label for="nameL" class="block mb-2 text-sm font-medium text-white">
+        <div id="nameDiv" className="mb-6">
+          <label for="nameL" className="block mb-2 text-sm font-medium text-white">
             Name of your Project
           </label>
           <input
             id="name"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
             required
             placeholder="Enter Your Project Name"
           ></input>
         </div>
 
-        <div id="videoDiv" class="mb-6">
-          <label for="videoL" class="block mb-2 text-sm font-medium text-white">
+        <div id="videoDiv" className="mb-6">
+          <label for="videoL" className="block mb-2 text-sm font-medium text-white">
             Link to your Video Presentation
           </label>
           <input
             id="video"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
             placeholder="https://www.youtube.com/"
             required
           ></input>
         </div>
 
-        <div id="githubDiv" class="mb-6">
+        <div id="githubDiv" className="mb-6">
           <label
             for="githubL"
-            class="block mb-2 text-sm font-medium text-white"
+            className="block mb-2 text-sm font-medium text-white"
           >
             Link to the projects GitHub organization (please make one with and
             put all your projects code in it)
           </label>
           <input
             id="github"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
             placeholder="https://github.com/"
             required
           ></input>
         </div>
 
-        <div id="fileDiv" class="mb-6">
-          <label for="fileL" class="block mb-2 text-sm font-medium text-white">
+        <div id="fileDiv" className="mb-6">
+          <label for="fileL" className="block mb-2 text-sm font-medium text-white">
             Link to your presentation (Please upload your presentation and
             provide the link)
           </label>
           <input
             id="file"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
             placeholder="https://github.com/"
             required
           ></input>
         </div>
 
         {/* <div id="tech">
-            <div class="row col-5">
-              <h4 class="fw-bold text-center mt-3"></h4>
-              <form class="px-4" action="">
-                <p class="fw-bold text-white">Tech Stack <br/> Choose all the technologies you will be implementing</p>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                  <label class="form-check-label text-white px-2" for="flexCheckDefault">
+            <div className="row col-5">
+              <h4 className="fw-bold text-center mt-3"></h4>
+              <form className="px-4" action="">
+                <p className="fw-bold text-white">Tech Stack <br/> Choose all the technologies you will be implementing</p>
+                <div className="form-check">
+                  <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                  <label className="form-check-label text-white px-2" for="flexCheckDefault">
                     Web App
                   </label>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                  <label class="form-check-label text-white px-2" for="flexCheckDefault">
+                <div className="form-check">
+                  <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                  <label className="form-check-label text-white px-2" for="flexCheckDefault">
                     Mobile App
                   </label>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" />
-                  <label class="form-check-label text-white px-2" for="flexCheckDefault2">
+                <div className="form-check">
+                  <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault2" />
+                  <label className="form-check-label text-white px-2" for="flexCheckDefault2">
                     ML/AI
                   </label>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" />
-                  <label class="form-check-label text-white px-2" for="flexCheckDefault3">
+                <div className="form-check">
+                  <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault3" />
+                  <label className="form-check-label text-white px-2" for="flexCheckDefault3">
                     Web3/Blockchain
                   </label>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" />
-                  <label class="form-check-label text-white px-2" for="flexCheckDefault3">
+                <div className="form-check">
+                  <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault3" />
+                  <label className="form-check-label text-white px-2" for="flexCheckDefault3">
                     IoT/Hardware
                   </label>
                 </div>
