@@ -11,13 +11,13 @@ export default function Footer() {
           <div className="contact_footer">
             <img src="call.png" width="23.5" alt="" />
             <a href="tel:+7057072999" className="contact_para">
-              +91 70570 72999 <br></br>(Harshal Bhure - Event Coordinator)
+              +91 72599 73282 <br></br>(Shrishail Chavadi - Event Coordinator)
             </a>
           </div>
           <div className="contact_footer">
             <img src="call.png" width="23.5" alt="" />
             <a href="tel:+7057072999" className="contact_para">
-              +91 72599 73282 <br></br>(Shrishail Chavadi - Event Coordinator)
+              +91 70570 72999 <br></br>(Harshal Bhure - Event Coordinator)
             </a>
           </div>
           <div className="contact_footer">
@@ -27,7 +27,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-          {/* <h1 className="develop_h1">Designed and developed by:</h1>
+        {/* <h1 className="develop_h1">Designed and developed by:</h1>
           <div className="dev_img_wrap">
             <a
               href="https://www.linkedin.com/in/aryak-singh-73686422b/"
@@ -99,11 +99,14 @@ export default function Footer() {
                 className="img_dev"
               />
             </a> */}
-            {/* <a className="developers">
+        {/* <a className="developers">
               <img src="developer.jpg" alt="" className="img_dev" />
             </a> */}
-          {/* </div> */}
+        {/* </div> */}
         <div className="rfoot">
+          <a className="foot_imgr">
+            <img src="ecell.png" alt="" />
+          </a>
           <a href="https://www.facebook.com/ecellvit/" className="foot_img">
             <img src="fb.svg" alt="" />
           </a>
@@ -120,11 +123,17 @@ export default function Footer() {
             <img src="twitter.svg" alt="" />
           </a>
         </div>
-<div className="rfoot">
+        <div className="rfoot">
+          <a className="foot_imgr">
+            <img src="iste.png" alt="" />
+          </a>
           <a href="https://www.facebook.com/ISTE.VIT" className="foot_img">
             <img src="fb.svg" alt="" />
           </a>
-          <a href="https://www.instagram.com/iste_vit_vellore/" className="foot_img">
+          <a
+            href="https://www.instagram.com/iste_vit_vellore/"
+            className="foot_img"
+          >
             <img src="insta.svg" alt="" />
           </a>
           <a
@@ -133,12 +142,21 @@ export default function Footer() {
           >
             <img src="linkedin.svg" alt="" />
           </a>
+          {/* <a href="https://twitter.com/ecell_vit" className="foot_img">
+            <img src="twitter.svg" alt="" />
+          </a> */}
         </div>
-  <div className="rfoot">
+        <div className="rfoot">
+          <a className="foot_imgr">
+            <img src="sam.png" alt="" />
+          </a>
           <a href="https://www.facebook.com/teamsammard" className="foot_img">
             <img src="fb.svg" alt="" />
           </a>
-          <a href="https://www.instagram.com/team_sammard/" className="foot_img">
+          <a
+            href="https://www.instagram.com/team_sammard/"
+            className="foot_img"
+          >
             <img src="insta.svg" alt="" />
           </a>
           <a
