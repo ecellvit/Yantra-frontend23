@@ -52,37 +52,10 @@ export default function Head() {
         sizes="180x180"
         href="apple-icon-180x180.png"
       />
-<<<<<<< HEAD
       <link rel="icon" type="image/svg" sizes="192x192" href="fire.png" />
       <link rel="icon" type="image/svg" sizes="32x32" href="fire.svg" />
       <link rel="icon" type="image/svg" sizes="96x96" href="fire.png" />
       <link rel="icon" type="image/svg" sizes="16x16" href="fire.svg" />
-=======
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="192x192"
-        href="android-icon-192x192.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="favicon-32x32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="96x96"
-        href="favicon-96x96.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="favicon.ico"
-      />
->>>>>>> 718e09f1226748fb53235ddfc6fbb7e76b068f0c
       <link rel="manifest" href="manifest.json" />
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="msapplication-TileImage" content="/fire.svg" />
