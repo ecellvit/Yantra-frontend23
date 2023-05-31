@@ -224,6 +224,9 @@
   .foot_img {
     @apply min-w-[10vw] mb-[10px];
   }
+  .foot_imgr {
+    @apply h-32;
+  }
   .card_cont {
     /* @apply static max-h-full max-w-[70%] min-w-[50vw] min-h-[40vh]  bg-[50%_50%] bg-cover bg-no-repeat text-white ml-[5vw] px-[40px] py-[20px] rounded-[20px] left-[10%] right-[15%] top-[5%] bottom-auto; */
     /* @apply ; */

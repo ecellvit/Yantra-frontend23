@@ -50,7 +50,11 @@ export default async function Home() {
           <br />
         </p>
         <p className="form_para_small">
-          Experience the thrill of aerospace engineering at Ignitia! Join Team Sammard's workshop for an unforgettable adventure in Aerodynamics, Rocket-Building, and OpenRocket. Learn the principles of flight, construct and launch rockets, optimize designs with cutting-edge software and ignite your passion for space exploration.
+          Experience the thrill of aerospace engineering at Ignitia! Join Team
+          Sammard's workshop for an unforgettable adventure in Aerodynamics,
+          Rocket-Building through OpenRocket. Learn the principles of flight,
+          construct and launch rockets, optimize designs with cutting-edge
+          software and ignite your passion for space exploration.
           <br />
         </p>
         <div className="evet_price_wrap">
