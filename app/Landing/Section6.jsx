@@ -23,7 +23,7 @@ export default function Section6() {
             }}
             className="primary_btn w-button"
           >
-            {session.data ? "Sbmit your Idea" : "Get Started"}
+            {session.data ? "Submit your Idea" : "Get Started"}
           </button>
         </div>
       </div>
