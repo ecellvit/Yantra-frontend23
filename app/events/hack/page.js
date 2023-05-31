@@ -37,13 +37,16 @@ export default async function Home() {
       <div className="event_wrapper">
         <h1 className="event_h1">
           The Ignitia Hack
-          <br />
         </h1>
-        <p className="event_date ">
-          Date &amp; Time : 31st March 2023, 9:00 PM
+        <br />
+        <p className="text-2xl font-semibold text-center mb-1 leading-normal mt-4">
+          Date : 02/06/2023
         </p>
-        <p className="event_para">
-          Venue: Sarojini Naidu SJT
+        <p className="text-2xl font-semibold text-center mb-1 leading-normal mt-4">
+          Time : 08:30 PM
+        </p>
+        <p className="text-2xl font-semibold text-center mb-1 leading-normal mt-4">
+          TT Gallery-2
           <br />
         </p>
         <p className="form_para_small">
@@ -53,7 +56,7 @@ export default async function Home() {
         <div className="evet_price_wrap">
           <div className="price_wrap">
             {/* <p className="para_med_event">Prize Pool</p> */}
-            <p className="para_bold_event">Prize Pool - Rs 75,000</p>
+            <p className="para_bold_event"> An Exciting Prize Pool Awaits!</p>
           </div>
           {/* <div className="price_wrap">
             <p className="para_med_event">2nd</p>
