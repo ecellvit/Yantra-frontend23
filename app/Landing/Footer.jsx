@@ -4,18 +4,18 @@ export default function Footer() {
   return (
     <div className="footer_section">
       <div className="footer-cont">
-        <div className="lfoot">
+        <div className="lfoot min-w-[30vw]">
           <div className="footer_logo">
             <img src="ignitlogo.png" width="338.5" alt="" className="img2" />
           </div>
           <div className="contact_footer">
-            <img src="call.png" width="23.5" alt="" />
+            <img src="call.png" width="23.5" alt="" className="image" />
             <a href="tel:+7057072999" className="contact_para">
               +91 72599 73282 <br></br>(Shrishail Chavadi - Event Coordinator)
             </a>
           </div>
           <div className="contact_footer">
-            <img src="call.png" width="23.5" alt="" />
+            <img src="call.png" width="23.5" alt="" className="image" />
             <a href="tel:+7057072999" className="contact_para">
               +91 70570 72999 <br></br>(Harshal Bhure - Event Coordinator)
             </a>
@@ -100,71 +100,95 @@ export default function Footer() {
               />
             </a> */}
         {/* <a className="developers">
-              <img src="developer.jpg" alt="" className="img_dev" />
+              <img src="developer.jpg" alt="" className="image"className="img_dev" />
             </a> */}
         {/* </div> */}
-        <div className="rfoot">
-          <a className="foot_imgr">
-            <img src="ecell.png" alt="" />
-          </a>
-          <a href="https://www.facebook.com/ecellvit/" className="foot_img">
-            <img src="fb.svg" alt="" />
-          </a>
-          <a href="https://www.instagram.com/ecell_vit/" className="foot_img">
-            <img src="insta.svg" alt="" />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/ecellvitvellore"
-            className="foot_img"
-          >
-            <img src="linkedin.svg" alt="" />
-          </a>
-          <a href="https://twitter.com/ecell_vit" className="foot_img">
-            <img src="twitter.svg" alt="" />
-          </a>
-        </div>
-        <div className="rfoot">
-          <a className="foot_imgr">
-            <img src="iste.png" alt="" />
-          </a>
-          <a href="https://www.facebook.com/ISTE.VIT" className="foot_img">
-            <img src="fb.svg" alt="" />
-          </a>
-          <a
-            href="https://www.instagram.com/iste_vit_vellore/"
-            className="foot_img"
-          >
-            <img src="insta.svg" alt="" />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/indian-society-for-technical-education/"
-            className="foot_img"
-          >
-            <img src="linkedin.svg" alt="" />
-          </a>
-          {/* <a href="https://twitter.com/ecell_vit" className="foot_img">
-            <img src="twitter.svg" alt="" />
+        <div className="mfoot">
+          {" "}
+          <div className="kfoot ">
+            <div className="rfoot">
+              <a className="foot_img">
+                <img src="ecell.png" alt="" className="image max-w-[75%]" />
+              </a>
+
+              <a href="https://www.facebook.com/ecellvit/" className="foot_img">
+                <img src="fb.svg" alt="" className="image" />
+              </a>
+              <a
+                href="https://www.instagram.com/ecell_vit/"
+                className="foot_img"
+              >
+                <img src="insta.svg" alt="" className="image " />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/ecellvitvellore"
+                className="foot_img"
+              >
+                <img src="linkedin.svg" alt="" className="image" />
+              </a>
+              <a href="https://twitter.com/ecell_vit" className="foot_img">
+                <img src="twitter.svg" alt="" className="image" />
+              </a>
+            </div>
+            <div className="rfoot">
+              <a className="foot_img">
+                <img src="iste.png" alt="" className="image  max-w-[75%]" />
+              </a>
+              <a href="https://www.facebook.com/ISTE.VIT" className="foot_img">
+                <img src="fb.svg" alt="" className="image" />
+              </a>
+              <a
+                href="https://www.instagram.com/iste_vit_vellore/"
+                className="foot_img"
+              >
+                <img src="insta.svg" alt="" className="image" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/indian-society-for-technical-education/"
+                className="foot_img"
+              >
+                <img src="linkedin.svg" alt="" className="image" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/teamsammardrocketry/"
+                className="foot_img invisible"
+              >
+                <img src="linkedin.svg" alt="" className="image invisible" />
+              </a>
+              {/* <a href="https://twitter.com/ecell_vit" className="foot_img">
+            <img src="twitter.svg" alt="" className="image"/>
           </a> */}
-        </div>
-        <div className="rfoot">
-          <a className="foot_imgr">
-            <img src="sam.png" alt="" />
-          </a>
-          <a href="https://www.facebook.com/teamsammard" className="foot_img">
-            <img src="fb.svg" alt="" />
-          </a>
-          <a
-            href="https://www.instagram.com/team_sammard/"
-            className="foot_img"
-          >
-            <img src="insta.svg" alt="" />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/teamsammardrocketry/"
-            className="foot_img"
-          >
-            <img src="linkedin.svg" alt="" />
-          </a>
+            </div>
+            <div className="rfoot">
+              <a className="foot_img">
+                <img src="sam.png" alt="" className="image max-w-[75%]" />
+              </a>
+              <a
+                href="https://www.facebook.com/teamsammard"
+                className="foot_img "
+              >
+                <img src="fb.svg" alt="" className="image" />
+              </a>
+              <a
+                href="https://www.instagram.com/team_sammard/"
+                className="foot_img"
+              >
+                <img src="insta.svg" alt="" className="image" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/teamsammardrocketry/"
+                className="foot_img"
+              >
+                <img src="linkedin.svg" alt="" className="image" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/teamsammardrocketry/"
+                className="foot_img display-none"
+              >
+                <img src="linkedin.svg" alt="" className="image invisible" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

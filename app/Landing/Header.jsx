@@ -13,9 +13,9 @@ export default function Header() {
           <img src="ignitelogo.png" alt="" />
         </div>
 
-        <p className="para2 mt-[-120px]">
+        {/* <p className="para2 mt-[-120px]">
           Shatter Limits, Forge Solutions and Spark Transformation
-        </p>
+        </p> */}
         <div className="innovate_sec ">
           <div className="bg-slate-800 bg-opacity-50 rounded-lg mb-3">
             <div className="innovate_wrapper text-white">
