@@ -11,7 +11,13 @@ export default function Footer() {
           <div className="contact_footer">
             <img src="call.png" width="23.5" alt="" />
             <a href="tel:+7057072999" className="contact_para">
-              +917057072999 <br></br>(Harshal Bhure - Event Coordinator)
+              +91 70570 72999 <br></br>(Harshal Bhure - Event Coordinator)
+            </a>
+          </div>
+          <div className="contact_footer">
+            <img src="call.png" width="23.5" alt="" />
+            <a href="tel:+7057072999" className="contact_para">
+              +91 72599 73282 <br></br>(Shrishail Chavadi - Event Coordinator)
             </a>
           </div>
           <div className="contact_footer">
