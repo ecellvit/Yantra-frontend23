@@ -113,7 +113,7 @@ export default function NewCard({
   return (
     <>
 
-      <div className="block max-w-sm p-6 min-h-full rounded-lg shadow  bg-zinc-700 bg-opacity-60">
+      <div className="block max-w-sm p-6 min-h-full rounded-lg shadow-white  bg-zinc-700 bg-opacity-60">
         {/* <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">Noteworthy technology acquisitions 2021</h5> */}
         {/* <p className="font-normal text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> */}
         {/* </div> */}
