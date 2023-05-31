@@ -22,10 +22,10 @@ export default function Section2() {
         <div className="about_txt_wrap">
           <h1 className="about_h1 text-white">Ignitia’23</h1>
           <p className="about_para text-white">
-            <strong className="bld">Introducing Ignitia</strong>, <p>a place where innovation meets collaboration. An extraordinary convergence of three dynamic workshops: Aerodynamics and Rocket-Building, DevOps, and Product Management and to top it all, a 36-hour adrenaline-fueled adventure: The Ignitia Hack, the ultimate test of skill, creativity, and endurance.</p>
+            <p> A place where innovation meets collaboration. An extraordinary convergence of three dynamic workshops: Aerodynamics and Rocket-Building, DevOps, and Product Management and to top it all, a 36-hour adrenaline-fueled adventure: The Ignitia Hack, the ultimate test of skill, creativity, and endurance.</p>
 Ignitia is a collaboration of three renowned clubs: Team Sammard, ISTE, and E-Cell. Together, they have curated an immersive program that will push the boundaries of your capabilities. 
-
-          </p>
+</p>
+        
           {/* <Link href="#" className="primary_btn w-button">
             Get Started{" "}
           </Link> */}
