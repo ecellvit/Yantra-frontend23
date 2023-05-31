@@ -198,7 +198,7 @@ export default function RoundZero({ accessTokenBackend }) {
           ></input>
         </div>
 
-        <div id="videoDiv" className="mb-6">
+        {/* <div id="videoDiv" className="mb-6">
           <label for="videoL" className="block mb-2 text-sm font-medium text-white">
             Link to your Video Presentation (Optional)
           </label>
@@ -209,7 +209,7 @@ export default function RoundZero({ accessTokenBackend }) {
             required
             value={video}
           ></input>
-        </div>
+        </div> */}
 
         <div id="githubDiv" className="mb-6">
           <label
@@ -436,7 +436,7 @@ export default function RoundZero({ accessTokenBackend }) {
           ></input>
         </div>
 
-        <div id="videoDiv" className="mb-6">
+        {/* <div id="videoDiv" className="mb-6">
           <label for="videoL" className="block mb-2 text-sm font-medium text-white">
             Link to your Video Presentation
           </label>
@@ -446,7 +446,7 @@ export default function RoundZero({ accessTokenBackend }) {
             placeholder="https://www.youtube.com/"
             required
           ></input>
-        </div>
+        </div> */}
 
         <div id="githubDiv" className="mb-6">
           <label

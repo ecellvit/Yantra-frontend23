@@ -14,7 +14,7 @@ export default function Dashboard({
   return hasTeam ? (
     userRole ? (
       <>
-      {/* <NewPages /> */}
+      <NewPages />
       <MemberDashboard
         userData={userData}
         eventName={eventName}
@@ -24,7 +24,7 @@ export default function Dashboard({
       </>
     ) : (
       <>
-      {/* <NewPages /> */}
+      <NewPages />
       <LeaderDashboard
         userData={userData}
         eventName={eventName}
