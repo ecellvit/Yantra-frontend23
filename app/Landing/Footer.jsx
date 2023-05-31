@@ -132,34 +132,6 @@ export default function Footer() {
             <img src="twitter.svg" alt="" />
           </a>
         </div>
-  <div className="rfoot">
-          <a href="https://www.facebook.com/ISTE.VIT" className="foot_img">
-            <img src="fb.svg" alt="" />
-          </a>
-          <a href="https://www.instagram.com/iste_vit_vellore/" className="foot_img">
-            <img src="insta.svg" alt="" />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/indian-society-for-technical-education/"
-            className="foot_img"
-          >
-            <img src="linkedin.svg" alt="" />
-          </a>
-        </div>
-  <div className="rfoot">
-          <a href="https://www.facebook.com/teamsammard" className="foot_img">
-            <img src="fb.svg" alt="" />
-          </a>
-          <a href="https://www.instagram.com/team_sammard/" className="foot_img">
-            <img src="insta.svg" alt="" />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/teamsammardrocketry/"
-            className="foot_img"
-          >
-            <img src="linkedin.svg" alt="" />
-          </a>
-        </div>
       </div>
     </div>
   );
