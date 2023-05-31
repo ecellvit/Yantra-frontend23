@@ -17,6 +17,9 @@
   }
 }
 @layer components {
+  .ignite {
+    @apply max-w-[30%];
+  }
   .w-button {
     @apply inline-block outline-0 bg-[#3898ec] text-[white] leading-[inherit] no-underline cursor-pointer px-[15px] py-[9px] rounded-none border-0;
   }
@@ -81,9 +84,9 @@
   .primary_btn {
     @apply block w-[15vw] bg-white text-black text-base leading-[20px] font-bold text-center mt-[20px] px-[15px] py-[9px] rounded-[20px] border-2 border-solid border-black;
     font-family: Inter, sans-serif;
-    transition: 0.3s;;
+    transition: 0.3s;
   }
-  .primary_btn:hover{
+  .primary_btn:hover {
     color: white;
     background: black;
     border: 2px white solid;
@@ -127,7 +130,7 @@
     /* @apply flex flex-row items-stretch; */
   }
   .timeline_wrapper {
-    @apply flex justify-center items-center pb-[5vh] border-white border-spacing-2 ;
+    @apply flex justify-center items-center pb-[5vh] border-white border-spacing-2;
   }
   .linetimeline {
     @apply w-[1vw] mt-[-1px] h-full bg-[#303030];
@@ -254,15 +257,15 @@
     font-family: Inter, sans-serif;
     transition: 0.4s;
   }
-  .card_btn:hover{
+  .card_btn:hover {
     @apply bg-white text-black;
     transform: scale(1.2);
     transition: 0.4s;
   }
-  .card_btn strong{
+  .card_btn strong {
     transition: 0.1s;
   }
-  .card_btn strong:hover{
+  .card_btn strong:hover {
     padding-left: 0.2rem;
     transition: 0.1s;
   }
@@ -575,7 +578,7 @@
       @apply min-w-[10vw];
       transition: 0.5s;
     }
-    .foot_img:hover{
+    .foot_img:hover {
       transform: scale(1.1);
       transition: 0.5s;
     }
@@ -922,6 +925,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .ignite {
+    @apply max-w-[50%];
+  }
   .form_para_small {
     @apply leading-[35px] text-center mb-2.5;
   }
@@ -999,7 +1005,6 @@
 }
 
 .create_cont {
-
   @apply text-black text-base font-normal;
   font-family: Inter, sans-serif;
 }
@@ -1051,7 +1056,7 @@
   @apply flex bg-[#1C1D20]  break-all min-h-[20vh] min-w-[25vw] flex-col justify-center flex-wrap items-center object-contain mx-auto p-5 rounded-[20px];
 }
 .team_card_holder {
-  @apply flex ;
+  @apply flex;
 }
 .team_details {
   @apply break-all text-white text-[0.9rem] leading-[25px] text-center object-cover mb-2.5;
@@ -1142,6 +1147,9 @@
   }
 }
 @media screen and (max-width: 479px) {
+  .ignite {
+    @apply max-w-[70%];
+  }
   .subnav {
     @apply mx-0 pl-2.5;
   }
@@ -1183,5 +1191,5 @@
   }
   .join_team {
     @apply mb-0 mx-2.5;
-}
+  }
 }
