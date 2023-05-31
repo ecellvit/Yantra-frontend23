@@ -20,6 +20,9 @@
   .ignite {
     @apply max-w-[30%];
   }
+  .kfoot {
+    @apply flex-col justify-end items-center flex;
+  }
   .w-button {
     @apply inline-block outline-0 bg-[#3898ec] text-[white] leading-[inherit] no-underline cursor-pointer px-[15px] py-[9px] rounded-none border-0;
   }
@@ -184,7 +187,7 @@
     @apply flex min-w-[50%] flex-col justify-between items-start mt-[40px];
   }
   .rfoot {
-    @apply flex min-w-[15%] flex-col items-end gap-x-[10px] gap-y-[10px] ml-[40px] mt-[40px];
+    @apply min-w-[15%] gap-x-2.5 gap-y-2.5 flex-row items-center flex ml-10 mt-10;
   }
   .footer-cont {
     @apply flex w-[80vw] flex-row items-start mx-auto pb-[40px];
@@ -520,6 +523,9 @@
     .innovate_wrapper {
       @apply flex-col;
     }
+    .kfoot {
+      @apply flex-col justify-center items-center;
+    }
     .features {
       @apply w-[80vw] max-w-[80vw] pl-5 border-solid border-b-[1px] border-r-0  border-[rgba(0,0,0,0.2)];
     }
@@ -569,7 +575,7 @@
       @apply flex-col;
     }
     .rfoot {
-      @apply min-w-full flex-row justify-center items-end gap-x-[10px] gap-y-[10px] mx-auto;
+      @apply min-w-full gap-x-2.5 gap-y-2.5 flex-row justify-center items-baseline mx-auto;
     }
     .footer-cont {
       @apply flex-col;

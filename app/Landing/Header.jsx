@@ -26,7 +26,9 @@ export default function Header() {
                 <div className="feat_text">
                   <p className="feat_h1">Empower</p>
                   <p className="feat_para text-white">
-                    Ignitia aims to empower individuals by providing them with knowledge, skills, and opportunities to succeed in their respective fields.
+                    Ignitia aims to empower individuals by providing them with
+                    knowledge, skills, and opportunities to succeed in their
+                    respective fields.
                   </p>
                 </div>
               </div>
@@ -37,7 +39,9 @@ export default function Header() {
                 <div className="feat_text">
                   <p className="feat_h1">Transform</p>
                   <p className="feat_para">
-                    Ignitia is dedicated to transforming the way we think, create, and innovate by fostering a collaborative and dynamic environment.
+                    Ignitia is dedicated to transforming the way we think,
+                    create, and innovate by fostering a collaborative and
+                    dynamic environment.
                   </p>
                 </div>
               </div>
@@ -48,7 +52,9 @@ export default function Header() {
                 <div className="feat_text">
                   <p className="feat_h1">Inspire</p>
                   <p className="feat_para">
-                    Ignitia strives to inspire participants to reach new heights, embrace their creativity, and make a positive impact in their communities and industries.
+                    Ignitia strives to inspire participants to reach new
+                    heights, embrace their creativity, and make a positive
+                    impact in their communities and industries.
                   </p>
                 </div>
               </div>
