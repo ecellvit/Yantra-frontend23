@@ -27,11 +27,6 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="mfoot">
-          <div className="foot_line"></div>
-          <p className="desc_footer">
-          </p>
-          <div className="foot_line"></div>
           {/* <h1 className="develop_h1">Designed and developed by:</h1>
           <div className="dev_img_wrap">
             <a
@@ -108,7 +103,6 @@ export default function Footer() {
               <img src="developer.jpg" alt="" className="img_dev" />
             </a> */}
           {/* </div> */}
-        </div>
         <div className="rfoot">
           <a href="https://www.facebook.com/ecellvit/" className="foot_img">
             <img src="fb.svg" alt="" />
@@ -124,6 +118,34 @@ export default function Footer() {
           </a>
           <a href="https://twitter.com/ecell_vit" className="foot_img">
             <img src="twitter.svg" alt="" />
+          </a>
+        </div>
+<div className="rfoot">
+          <a href="https://www.facebook.com/ISTE.VIT" className="foot_img">
+            <img src="fb.svg" alt="" />
+          </a>
+          <a href="https://www.instagram.com/iste_vit_vellore/" className="foot_img">
+            <img src="insta.svg" alt="" />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/indian-society-for-technical-education/"
+            className="foot_img"
+          >
+            <img src="linkedin.svg" alt="" />
+          </a>
+        </div>
+  <div className="rfoot">
+          <a href="https://www.facebook.com/teamsammard" className="foot_img">
+            <img src="fb.svg" alt="" />
+          </a>
+          <a href="https://www.instagram.com/team_sammard/" className="foot_img">
+            <img src="insta.svg" alt="" />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/teamsammardrocketry/"
+            className="foot_img"
+          >
+            <img src="linkedin.svg" alt="" />
           </a>
         </div>
       </div>
