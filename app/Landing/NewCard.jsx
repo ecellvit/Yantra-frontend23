@@ -130,7 +130,7 @@ export default function NewCard({
           <div>
             <div className="card_l">
               <img src="clock.svg" alt="" className="svg_card" />
-              <p className="timepara text-white">{event?.time} hours</p>
+              <p className="timepara text-white">{event?.time}</p>
             </div>
             <div className="card_r">
               <img src="location.svg" alt="" className="svg_card" />
