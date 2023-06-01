@@ -37,6 +37,7 @@ export default function NewPages() {
                 rel="noreferrer"
                 target="_blank"
                 // href="https://drive.google.com/file/d/1kpgzpDlPyuL8_ChURbL9EVQkgu55Wlkx/view?usp=share_link"
+                // href="https://drive.google.com/file/d/1HjQBFqg1BvCwJrB8TLbidBEEbjMRxZhE/view"
                 href="https://drive.google.com/file/d/1HjQBFqg1BvCwJrB8TLbidBEEbjMRxZhE/view"
             > View Tracks </a>
             <a className="navigation_card_btn w-button"
