@@ -80,7 +80,13 @@ export default function RegButton({ userArray, check, hasTeam }) {
     <button
       className="eventbtn w-button"
       onClick={() => {
-        router.push("/manage/hack");
+        if (hasTeam) {
+          router.push("/manage/hack");
+        } else {
+          signIn("google", {
+            callbackUrl: "/manage/hack",
+          });
+        }
         // console.log(isRegistered);
         // if (userArray) {
         //   //console.log(userArray);
