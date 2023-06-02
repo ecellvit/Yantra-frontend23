@@ -10,7 +10,7 @@ export default function Header() {
         </h1> */}
 
         <div className="ignite">
-          <img src="ignitelogo.png" alt="" />
+          <img src="withSponsor.png" alt="" />
         </div>
 
         {/* <p className="para2 mt-[-120px]">
