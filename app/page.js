@@ -43,14 +43,17 @@ async function getUserData(session) {
 }
 
 export default async function Home() {
-  const eventData = await getData();
-  const eventsArray = await eventData.events;
-  const session = await getSession();
-  const userData = await getUserData(session);
-  const userArray = userData?.user?.registeredEvents;
+  // const eventData = await getData();
+  const eventData = { events: [], user: {registeredEvents:[0,0,0,0]} };
+  const eventsArray = eventData.events;
+  // const session = await getSession();
+  const session = { accessTokenBackend: "" };
+  // const userData = await getUserData(session);
+  const userData = [];
+  const userArray = [0,0,0,0];
   const hasTeam = userData?.user?.yantraTeamId;
 
-  console.log(hasTeam);
+  console.log(userArray);
 
   if (userData === "error") {
     return <NotLoggedIn />;
